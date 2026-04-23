@@ -1,0 +1,4768 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "project": "GeneaBible",
+    "description": "Dataset complet des personnages bibliques structur\u00e9 par niveaux d'importance pour affichage lazy progressif",
+    "levels": {
+      "1": "Piliers de l'histoire du salut \u2014 affich\u00e9s au chargement initial",
+      "2": "Figures majeures par \u00e9poque \u2014 charg\u00e9s au zoom \u00e9poque",
+      "3": "Personnages secondaires significatifs \u2014 charg\u00e9s au zoom personnage",
+      "4": "Personnages mineurs \u2014 charg\u00e9s \u00e0 la demande uniquement"
+    },
+    "eras": {
+      "origins": {
+        "id": "origins",
+        "label": "Origines",
+        "range": "Cr\u00e9ation \u2014 ~2350 av. J.-C.",
+        "color": "#1D9E75"
+      },
+      "patriarchs": {
+        "id": "patriarchs",
+        "label": "Patriarches",
+        "range": "~2100 \u2014 ~1700 av. J.-C.",
+        "color": "#185FA5"
+      },
+      "exodus": {
+        "id": "exodus",
+        "label": "Exode & Conqu\u00eate",
+        "range": "~1280 \u2014 ~1200 av. J.-C.",
+        "color": "#BA7517"
+      },
+      "judges_kings": {
+        "id": "judges_kings",
+        "label": "Juges & Royaut\u00e9",
+        "range": "~1200 \u2014 ~930 av. J.-C.",
+        "color": "#993556"
+      },
+      "prophets_exile": {
+        "id": "prophets_exile",
+        "label": "Proph\u00e8tes & Exil",
+        "range": "~930 \u2014 ~400 av. J.-C.",
+        "color": "#534AB7"
+      },
+      "new_testament": {
+        "id": "new_testament",
+        "label": "Nouveau Testament",
+        "range": "~5 av. J.-C. \u2014 ~100 ap. J.-C.",
+        "color": "#D85A30"
+      }
+    },
+    "relationTypes": [
+      "p\u00e8re",
+      "m\u00e8re",
+      "fils",
+      "fille",
+      "fr\u00e8re",
+      "s\u0153ur",
+      "\u00e9poux",
+      "\u00e9pouse",
+      "anc\u00eatre",
+      "descendant",
+      "disciple",
+      "ma\u00eetre",
+      "proph\u00e8te",
+      "roi",
+      "serviteur",
+      "ami",
+      "ennemi",
+      "successeur",
+      "pr\u00e9curseur",
+      "mentor",
+      "lieutenant",
+      "beau-p\u00e8re",
+      "belle-m\u00e8re",
+      "gendre",
+      "belle-fille",
+      "demi-fr\u00e8re",
+      "demi-s\u0153ur",
+      "oncle",
+      "tante",
+      "neveu",
+      "ni\u00e8ce",
+      "cousin",
+      "alli\u00e9",
+      "rival",
+      "juge",
+      "pr\u00eatre",
+      "ap\u00f4tre",
+      "\u00e9vang\u00e9liste"
+    ],
+    "totalCharacters": 3089,
+    "lastUpdated": "2025-01"
+  },
+  "characters": [
+    {
+      "id": "adam",
+      "level": 1,
+      "era": "origins",
+      "name": {
+        "fr": "Adam",
+        "he": "\u05d0\u05b8\u05d3\u05b8\u05dd",
+        "en": "Adam",
+        "meaning": "Homme, terre rouge"
+      },
+      "description": "Premier \u00eatre humain cr\u00e9\u00e9 par Dieu selon la Gen\u00e8se. Form\u00e9 de la poussi\u00e8re du sol et anim\u00e9 du souffle divin, il est plac\u00e9 dans le jardin d'\u00c9den. Sa d\u00e9sob\u00e9issance avec \u00c8ve introduit le p\u00e9ch\u00e9 dans l'humanit\u00e9 \u2014 \u00e9v\u00e9nement th\u00e9ologique fondamental appel\u00e9 la 'chute'. P\u00e8re de toute l'humanit\u00e9, anc\u00eatre de la lign\u00e9e qui m\u00e8nera au Christ (Luc 3:38 le nomme 'fils de Dieu').",
+      "references": [
+        "Gn 1:26-27",
+        "Gn 2:7",
+        "Gn 3",
+        "Gn 5:1-5",
+        "Rm 5:14",
+        "1 Co 15:45",
+        "Lc 3:38"
+      ],
+      "death": {
+        "age": 930,
+        "cause": "naturelle"
+      },
+      "attributes": [
+        "premier homme",
+        "gardien d'\u00c9den",
+        "nommeur des animaux"
+      ],
+      "relations": [
+        {
+          "targetId": "eve",
+          "type": "\u00e9pouse",
+          "description": "Cr\u00e9\u00e9e de sa c\u00f4te, compagne dans \u00c9den et dans la chute"
+        },
+        {
+          "targetId": "cain",
+          "type": "fils",
+          "description": "Premier fils, meurtrier d'Abel"
+        },
+        {
+          "targetId": "abel",
+          "type": "fils",
+          "description": "Second fils, berger, tu\u00e9 par Ca\u00efn"
+        },
+        {
+          "targetId": "seth",
+          "type": "fils",
+          "description": "Troisi\u00e8me fils, anc\u00eatre de No\u00e9 et de la lign\u00e9e messianique"
+        }
+      ],
+      "position": {
+        "x": 100,
+        "y": 300
+      }
+    },
+    {
+      "id": "eve",
+      "level": 1,
+      "era": "origins",
+      "name": {
+        "fr": "\u00c8ve",
+        "he": "\u05d7\u05b7\u05d5\u05b8\u05bc\u05d4",
+        "en": "Eve",
+        "meaning": "Vivante, m\u00e8re de tout vivant"
+      },
+      "description": "Premi\u00e8re femme, cr\u00e9\u00e9e de la c\u00f4te d'Adam. Appel\u00e9e 'm\u00e8re de tout vivant' (Gn 3:20). C'est elle qui, s\u00e9duite par le serpent, mange du fruit d\u00e9fendu et en donne \u00e0 Adam \u2014 d\u00e9clenchant la chute. Symbole de l'humanit\u00e9 dans sa fragilit\u00e9 face \u00e0 la tentation, mais aussi dans sa vocation \u00e0 la vie et \u00e0 la maternit\u00e9.",
+      "references": [
+        "Gn 2:22-23",
+        "Gn 3",
+        "Gn 4:1-2",
+        "2 Co 11:3",
+        "1 Tm 2:13"
+      ],
+      "attributes": [
+        "premi\u00e8re femme",
+        "m\u00e8re de l'humanit\u00e9"
+      ],
+      "relations": [
+        {
+          "targetId": "adam",
+          "type": "\u00e9poux",
+          "description": "Son \u00e9poux, cr\u00e9\u00e9e de sa c\u00f4te"
+        },
+        {
+          "targetId": "cain",
+          "type": "fils",
+          "description": "Premier fils"
+        },
+        {
+          "targetId": "abel",
+          "type": "fils",
+          "description": "Second fils"
+        },
+        {
+          "targetId": "seth",
+          "type": "fils",
+          "description": "Troisi\u00e8me fils"
+        }
+      ],
+      "position": {
+        "x": 250,
+        "y": 300
+      }
+    },
+    {
+      "id": "noah",
+      "level": 1,
+      "era": "origins",
+      "name": {
+        "fr": "No\u00e9",
+        "he": "\u05e0\u05b9\u05d7\u05b7",
+        "en": "Noah",
+        "meaning": "Repos, consolation"
+      },
+      "description": "Dixi\u00e8me descendant d'Adam, qualifi\u00e9 d'homme juste et int\u00e8gre dans sa g\u00e9n\u00e9ration. Choisi par Dieu pour construire l'arche et pr\u00e9server l'humanit\u00e9 et le r\u00e8gne animal du D\u00e9luge universel. Apr\u00e8s le d\u00e9luge, Dieu \u00e9tablit avec lui la premi\u00e8re alliance cosmique (arc-en-ciel), marquant un nouveau d\u00e9part pour l'humanit\u00e9. Anc\u00eatre de tous les peuples actuels \u00e0 travers ses trois fils.",
+      "references": [
+        "Gn 5:29",
+        "Gn 6-9",
+        "Gn 10",
+        "Es 54:9",
+        "Mt 24:37-38",
+        "He 11:7",
+        "1 P 3:20"
+      ],
+      "death": {
+        "age": 950,
+        "cause": "naturelle"
+      },
+      "attributes": [
+        "constructeur de l'arche",
+        "juste parmi les siens",
+        "premier vigneron"
+      ],
+      "relations": [
+        {
+          "targetId": "shem",
+          "type": "fils",
+          "description": "Fils a\u00een\u00e9, anc\u00eatre des peuples s\u00e9mites"
+        },
+        {
+          "targetId": "ham",
+          "type": "fils",
+          "description": "Second fils, anc\u00eatre des peuples africains et canan\u00e9ens"
+        },
+        {
+          "targetId": "japheth",
+          "type": "fils",
+          "description": "Troisi\u00e8me fils, anc\u00eatre des peuples indo-europ\u00e9ens"
+        },
+        {
+          "targetId": "lamech_noah",
+          "type": "p\u00e8re",
+          "description": "Son p\u00e8re, descendant de Seth"
+        }
+      ],
+      "position": {
+        "x": 400,
+        "y": 300
+      }
+    },
+    {
+      "id": "abraham",
+      "level": 1,
+      "era": "patriarchs",
+      "name": {
+        "fr": "Abraham",
+        "he": "\u05d0\u05b7\u05d1\u05b0\u05e8\u05b8\u05d4\u05b8\u05dd",
+        "en": "Abraham",
+        "meaning": "P\u00e8re d'une multitude (anciennement Abram : p\u00e8re \u00e9lev\u00e9)"
+      },
+      "description": "P\u00e8re des croyants et fondateur de la foi monoth\u00e9iste abrahamique. Appel\u00e9 par Dieu \u00e0 quitter Ur des Chald\u00e9ens pour une terre promise. Dieu \u00e9tablit avec lui une alliance \u00e9ternelle : sa descendance h\u00e9ritera de Canaan et sera aussi nombreuse que les \u00e9toiles. Son ob\u00e9issance ultime \u2014 consentir \u00e0 sacrifier Isaac \u2014 devient le paradigme de la foi. V\u00e9n\u00e9r\u00e9 dans le juda\u00efsme, le christianisme et l'islam.",
+      "references": [
+        "Gn 12-25",
+        "Rm 4",
+        "Ga 3:6-9",
+        "He 11:8-19",
+        "Jc 2:23"
+      ],
+      "death": {
+        "age": 175,
+        "cause": "naturelle"
+      },
+      "attributes": [
+        "p\u00e8re des croyants",
+        "ami de Dieu",
+        "premier \u00e0 recevoir l'alliance de la circoncision"
+      ],
+      "relations": [
+        {
+          "targetId": "sarah",
+          "type": "\u00e9pouse",
+          "description": "\u00c9pouse principale, m\u00e8re d'Isaac, demi-s\u0153ur selon Gn 20:12"
+        },
+        {
+          "targetId": "hagar",
+          "type": "\u00e9pouse",
+          "description": "\u00c9pouse secondaire \u00e9gyptienne, m\u00e8re d'Isma\u00ebl"
+        },
+        {
+          "targetId": "isaac",
+          "type": "fils",
+          "description": "Fils de la promesse, n\u00e9 de Sara \u00e0 100 ans"
+        },
+        {
+          "targetId": "ishmael",
+          "type": "fils",
+          "description": "Fils a\u00een\u00e9 n\u00e9 d'Agar, anc\u00eatre des peuples arabes"
+        },
+        {
+          "targetId": "lot",
+          "type": "neveu",
+          "description": "Fils de son fr\u00e8re Haran, l'accompagne de Ur \u00e0 Canaan"
+        },
+        {
+          "targetId": "terah",
+          "type": "p\u00e8re",
+          "description": "Son p\u00e8re, parti d'Ur vers Canaan, mort \u00e0 Haran"
+        },
+        {
+          "targetId": "melchizedek",
+          "type": "pr\u00eatre",
+          "description": "Roi-pr\u00eatre de Salem qui le b\u00e9nit apr\u00e8s la victoire contre les rois"
+        }
+      ],
+      "position": {
+        "x": 100,
+        "y": 300
+      }
+    },
+    {
+      "id": "moses",
+      "level": 1,
+      "era": "exodus",
+      "name": {
+        "fr": "Mo\u00efse",
+        "he": "\u05de\u05b9\u05e9\u05b6\u05c1\u05d4",
+        "en": "Moses",
+        "meaning": "Tir\u00e9 des eaux (h\u00e9breu) / Fils (\u00e9gyptien)"
+      },
+      "description": "Le plus grand proph\u00e8te de l'Ancien Testament selon la tradition h\u00e9bra\u00efque. Lib\u00e9rateur du peuple h\u00e9breu de l'esclavage \u00e9gyptien, m\u00e9diateur de l'Alliance au Sina\u00ef, receveur de la Torah. Parle \u00e0 Dieu 'face \u00e0 face'. M\u00e8ne Isra\u00ebl 40 ans dans le d\u00e9sert sans jamais atteindre la Terre promise. Sa figure est centrale dans les trois traditions abrahamiques. Le NT pr\u00e9sente J\u00e9sus comme le 'nouveau Mo\u00efse'.",
+      "references": [
+        "Ex 1-40",
+        "Lv",
+        "Nb",
+        "Dt",
+        "Mt 17:3",
+        "He 11:23-28",
+        "Jude 1:9"
+      ],
+      "death": {
+        "age": 120,
+        "cause": "mort avant d'entrer en Canaan, enterr\u00e9 par Dieu lui-m\u00eame"
+      },
+      "attributes": [
+        "lib\u00e9rateur d'Isra\u00ebl",
+        "l\u00e9gislateur",
+        "proph\u00e8te",
+        "m\u00e9diateur de l'Alliance",
+        "auteur du Pentateuque (tradition)"
+      ],
+      "relations": [
+        {
+          "targetId": "aaron",
+          "type": "fr\u00e8re",
+          "description": "Fr\u00e8re a\u00een\u00e9, porte-parole aupr\u00e8s de Pharaon, premier grand-pr\u00eatre"
+        },
+        {
+          "targetId": "miriam",
+          "type": "s\u0153ur",
+          "description": "S\u0153ur a\u00een\u00e9e, proph\u00e9tesse, l'a surveill\u00e9 dans le Nil"
+        },
+        {
+          "targetId": "zipporah",
+          "type": "\u00e9pouse",
+          "description": "Fille du pr\u00eatre J\u00e9thro de Madian, sa femme"
+        },
+        {
+          "targetId": "joshua",
+          "type": "successeur",
+          "description": "Son assistant et successeur \u00e0 la t\u00eate d'Isra\u00ebl"
+        },
+        {
+          "targetId": "pharaoh_ramesses",
+          "type": "ennemi",
+          "description": "Pharaon de l'Exode, adversaire des 10 plaies"
+        },
+        {
+          "targetId": "jethro",
+          "type": "beau-p\u00e8re",
+          "description": "Pr\u00eatre de Madian, son beau-p\u00e8re, lui conseille de d\u00e9l\u00e9guer"
+        },
+        {
+          "targetId": "elijah",
+          "type": "alli\u00e9",
+          "description": "Appara\u00eet avec lui \u00e0 la Transfiguration de J\u00e9sus"
+        }
+      ],
+      "position": {
+        "x": 100,
+        "y": 300
+      }
+    },
+    {
+      "id": "david",
+      "level": 1,
+      "era": "judges_kings",
+      "name": {
+        "fr": "David",
+        "he": "\u05d3\u05b8\u05bc\u05d5\u05b4\u05d3",
+        "en": "David",
+        "meaning": "Bien-aim\u00e9"
+      },
+      "description": "Roi-berger, guerrier, psalmiste \u2014 figure la plus complexe et la plus aim\u00e9e de l'AT. Choisi par Dieu alors qu'il est jeune berger, vainqueur de Goliath, musicien \u00e0 la cour de Sa\u00fcl, roi unifi\u00e9 d'Isra\u00ebl et de Juda. Dieu lui promet une alliance dynastique \u00e9ternelle (2 S 7) dont le Messie sera l'accomplissement ultime. Auteur traditionnel d'une grande partie des Psaumes. Sa faute avec Bethsab\u00e9e illustre la fragilit\u00e9 humaine m\u00eame dans la foi.",
+      "references": [
+        "1 S 16-31",
+        "2 S 1-24",
+        "1 R 1-2",
+        "Ps 1-150 (tradition)",
+        "Mt 1:1",
+        "Rm 1:3"
+      ],
+      "death": {
+        "age": 70,
+        "cause": "naturelle, vieux et rassasi\u00e9 de jours"
+      },
+      "attributes": [
+        "roi d'Isra\u00ebl",
+        "psalmiste",
+        "homme selon le c\u0153ur de Dieu",
+        "anc\u00eatre du Messie"
+      ],
+      "relations": [
+        {
+          "targetId": "saul",
+          "type": "rival",
+          "description": "Premier roi d'Isra\u00ebl, le pers\u00e9cute par jalousie"
+        },
+        {
+          "targetId": "jonathan",
+          "type": "ami",
+          "description": "Fils de Sa\u00fcl, ami fid\u00e8le jusqu'\u00e0 la mort"
+        },
+        {
+          "targetId": "bathsheba",
+          "type": "\u00e9pouse",
+          "description": "\u00c9pouse prise \u00e0 Urie, m\u00e8re de Salomon"
+        },
+        {
+          "targetId": "solomon",
+          "type": "fils",
+          "description": "Son fils et successeur, n\u00e9 de Bethsab\u00e9e"
+        },
+        {
+          "targetId": "absalom",
+          "type": "fils",
+          "description": "Fils rebelle qui le renverse bri\u00e8vement"
+        },
+        {
+          "targetId": "nathan",
+          "type": "proph\u00e8te",
+          "description": "Proph\u00e8te qui le reprend apr\u00e8s sa faute avec Bethsab\u00e9e"
+        },
+        {
+          "targetId": "goliath",
+          "type": "ennemi",
+          "description": "G\u00e9ant philistin qu'il terrasse adolescent"
+        },
+        {
+          "targetId": "jesse",
+          "type": "p\u00e8re",
+          "description": "Son p\u00e8re, Bethl\u00e9h\u00e9mite de la tribu de Juda"
+        },
+        {
+          "targetId": "jesus",
+          "type": "anc\u00eatre",
+          "description": "J\u00e9sus est appel\u00e9 'fils de David', descendant messianique"
+        }
+      ],
+      "position": {
+        "x": 100,
+        "y": 300
+      }
+    },
+    {
+      "id": "elijah",
+      "level": 1,
+      "era": "prophets_exile",
+      "name": {
+        "fr": "\u00c9lie",
+        "he": "\u05d0\u05b5\u05dc\u05b4\u05d9\u05b8\u05bc\u05d4\u05d5\u05bc",
+        "en": "Elijah",
+        "meaning": "Mon Dieu est YHWH"
+      },
+      "description": "Le proph\u00e8te par excellence de l'Ancien Testament. D\u00e9fenseur radical du monoth\u00e9isme face au culte de Baal introduit par J\u00e9zabel. Op\u00e8re des miracles extraordinaires : ressuscite un mort, fait descendre le feu du ciel sur le Carmel, multiplie la farine et l'huile. Unique avec Enoch \u00e0 ne pas conna\u00eetre la mort \u2014 emport\u00e9 au ciel dans un char de feu. R\u00e9appara\u00eet \u00e0 la Transfiguration avec Mo\u00efse. Jean-Baptiste lui est explicitement compar\u00e9 (Ml 4:5, Mt 11:14).",
+      "references": [
+        "1 R 17-19",
+        "2 R 1-2",
+        "Ml 4:5",
+        "Mt 11:14",
+        "Mt 17:3",
+        "Lc 1:17",
+        "Jc 5:17"
+      ],
+      "attributes": [
+        "proph\u00e8te du feu",
+        "d\u00e9fenseur du monoth\u00e9isme",
+        "n'a pas connu la mort"
+      ],
+      "relations": [
+        {
+          "targetId": "elisha",
+          "type": "successeur",
+          "description": "Son disciple et successeur, re\u00e7oit double portion de son esprit"
+        },
+        {
+          "targetId": "ahab",
+          "type": "ennemi",
+          "description": "Roi d'Isra\u00ebl qu'il affronte sur le Carmel"
+        },
+        {
+          "targetId": "jezebel",
+          "type": "ennemi",
+          "description": "Reine qui cherche \u00e0 le tuer apr\u00e8s le Carmel"
+        },
+        {
+          "targetId": "moses",
+          "type": "alli\u00e9",
+          "description": "Appara\u00eet \u00e0 ses c\u00f4t\u00e9s \u00e0 la Transfiguration de J\u00e9sus"
+        },
+        {
+          "targetId": "john_baptist",
+          "type": "pr\u00e9curseur",
+          "description": "Jean-Baptiste est pr\u00e9sent\u00e9 comme l'\u00c9lie \u00e0 venir (Mt 11:14)"
+        },
+        {
+          "targetId": "jesus",
+          "type": "alli\u00e9",
+          "description": "Appara\u00eet avec Mo\u00efse \u00e0 la Transfiguration de J\u00e9sus"
+        }
+      ],
+      "position": {
+        "x": 100,
+        "y": 300
+      }
+    },
+    {
+      "id": "isaiah",
+      "level": 1,
+      "era": "prophets_exile",
+      "name": {
+        "fr": "\u00c9sa\u00efe",
+        "he": "\u05d9\u05b0\u05e9\u05b7\u05c1\u05e2\u05b0\u05d9\u05b8\u05d4\u05d5\u05bc",
+        "en": "Isaiah",
+        "meaning": "YHWH est salut"
+      },
+      "description": "Le plus grand des proph\u00e8tes d'\u00e9criture de l'AT, souvent appel\u00e9 'le cinqui\u00e8me \u00e9vang\u00e9liste'. Son livre (66 chapitres, comme les 66 livres de la Bible) contient les proph\u00e9ties messianiques les plus pr\u00e9cises : naissance virginale (Es 7:14), serviteur souffrant (Es 53), r\u00e8gne de paix. Contemporain des rois Ozias, Yotam, Achaz et \u00c9z\u00e9chias. Selon la tradition rabbinique, martyris\u00e9 sous Manass\u00e9 en \u00e9tant sci\u00e9 en deux.",
+      "references": [
+        "Es 1-66",
+        "Mt 1:23",
+        "Mt 3:3",
+        "Lc 4:17-21",
+        "Ac 8:30-35",
+        "Rm 10:16"
+      ],
+      "death": {
+        "age": null,
+        "cause": "martyris\u00e9 selon la tradition"
+      },
+      "attributes": [
+        "proph\u00e8te messianique",
+        "visionnaire",
+        "conseiller royal"
+      ],
+      "relations": [
+        {
+          "targetId": "hezekiah",
+          "type": "alli\u00e9",
+          "description": "Roi \u00c9z\u00e9chias qu'il conseille face \u00e0 l'Assyrie"
+        },
+        {
+          "targetId": "ahaz",
+          "type": "ennemi",
+          "description": "Roi impie qu'il interpelle avec le signe Emmanuel"
+        },
+        {
+          "targetId": "jesus",
+          "type": "pr\u00e9curseur",
+          "description": "Ses proph\u00e9ties s'accomplissent en J\u00e9sus (Es 7:14, 53)"
+        }
+      ],
+      "position": {
+        "x": 250,
+        "y": 300
+      }
+    },
+    {
+      "id": "john_baptist",
+      "level": 1,
+      "era": "new_testament",
+      "name": {
+        "fr": "Jean-Baptiste",
+        "he": "\u05d9\u05d5\u05b9\u05d7\u05b8\u05e0\u05b8\u05df",
+        "en": "John the Baptist",
+        "meaning": "YHWH est gracieux"
+      },
+      "description": "Pr\u00e9curseur et cousin de J\u00e9sus, dernier proph\u00e8te de l'ancienne Alliance. Vit en asc\u00e8te dans le d\u00e9sert, v\u00eatu de poils de chameau, se nourrissant de sauterelles et de miel sauvage. Pr\u00eache un bapt\u00eame de repentance au Jourdain. Baptise J\u00e9sus, entendant la voix du P\u00e8re et voyant l'Esprit descendre. J\u00e9sus dit de lui : 'Il n'en est pas n\u00e9 de plus grand parmi les enfants des femmes' (Mt 11:11). D\u00e9capit\u00e9 sur ordre d'H\u00e9rode Antipas \u00e0 la demande de Salom\u00e9.",
+      "references": [
+        "Mt 3",
+        "Mt 11:11-14",
+        "Lc 1:5-25",
+        "Lc 1:57-80",
+        "Jn 1:19-34",
+        "Mc 6:14-29"
+      ],
+      "death": {
+        "age": null,
+        "cause": "d\u00e9capit\u00e9 par H\u00e9rode Antipas"
+      },
+      "attributes": [
+        "pr\u00e9curseur du Messie",
+        "baptiste",
+        "asc\u00e8te",
+        "dernier proph\u00e8te de l'AT"
+      ],
+      "relations": [
+        {
+          "targetId": "jesus",
+          "type": "cousin",
+          "description": "Cousin de J\u00e9sus, le baptise au Jourdain"
+        },
+        {
+          "targetId": "zechariah_nt",
+          "type": "p\u00e8re",
+          "description": "Son p\u00e8re, pr\u00eatre du Temple, frapp\u00e9 de mutisme pour son incr\u00e9dulit\u00e9"
+        },
+        {
+          "targetId": "elizabeth",
+          "type": "m\u00e8re",
+          "description": "Sa m\u00e8re, cousine de Marie, st\u00e9rile puis enceinte de lui \u00e0 un \u00e2ge avanc\u00e9"
+        },
+        {
+          "targetId": "herod_antipas",
+          "type": "ennemi",
+          "description": "T\u00e9trarque qui le fait d\u00e9capiter"
+        },
+        {
+          "targetId": "elijah",
+          "type": "successeur",
+          "description": "Pr\u00e9sent\u00e9 comme l'\u00c9lie annonc\u00e9 par Malachie"
+        },
+        {
+          "targetId": "salome",
+          "type": "ennemi",
+          "description": "Belle-fille d'H\u00e9rode dont la danse entra\u00eene sa d\u00e9capitation"
+        }
+      ],
+      "position": {
+        "x": 100,
+        "y": 300
+      }
+    },
+    {
+      "id": "jesus",
+      "level": 1,
+      "era": "new_testament",
+      "name": {
+        "fr": "J\u00e9sus",
+        "he": "\u05d9\u05b5\u05e9\u05c1\u05d5\u05bc\u05e2\u05b7",
+        "en": "Jesus",
+        "meaning": "YHWH sauve (Yeshua)"
+      },
+      "description": "Personnage central du Nouveau Testament et du christianisme. N\u00e9 \u00e0 Bethl\u00e9em de Marie, vierge, et de Joseph (descendance l\u00e9gale). Apr\u00e8s une vie cach\u00e9e \u00e0 Nazareth, il est baptis\u00e9 par Jean \u00e0 ~30 ans et entame un minist\u00e8re de 3 ans en Galil\u00e9e et Jud\u00e9e : enseignement, miracles, appel des Douze. Crucifi\u00e9 sous Ponce Pilate, ressuscit\u00e9 le troisi\u00e8me jour selon les \u00e9vangiles. Confess\u00e9 comme Messie, Fils de Dieu, et Dieu lui-m\u00eame dans la doctrine trinitaire. Personnage historique attest\u00e9 par Flavius Jos\u00e8phe et Tacite.",
+      "references": [
+        "Mt 1-28",
+        "Mc 1-16",
+        "Lc 1-24",
+        "Jn 1-21",
+        "Ac 1-2",
+        "Rm 1:1-4",
+        "Ap 1:8"
+      ],
+      "death": {
+        "age": 33,
+        "cause": "crucifixion sous Ponce Pilate, ressuscit\u00e9 le 3e jour"
+      },
+      "attributes": [
+        "Messie",
+        "Fils de Dieu",
+        "rabbi",
+        "thaumaturge",
+        "crucifi\u00e9 et ressuscit\u00e9"
+      ],
+      "relations": [
+        {
+          "targetId": "mary_mother",
+          "type": "m\u00e8re",
+          "description": "Sa m\u00e8re, vierge au moment de sa conception"
+        },
+        {
+          "targetId": "joseph_nt",
+          "type": "p\u00e8re",
+          "description": "Son p\u00e8re adoptif l\u00e9gal, charpentier \u00e0 Nazareth"
+        },
+        {
+          "targetId": "john_baptist",
+          "type": "cousin",
+          "description": "Cousin qui le baptise au Jourdain"
+        },
+        {
+          "targetId": "peter",
+          "type": "disciple",
+          "description": "Ap\u00f4tre principal, chef des Douze, renomm\u00e9 Pierre par J\u00e9sus"
+        },
+        {
+          "targetId": "john_apostle",
+          "type": "disciple",
+          "description": "Disciple bien-aim\u00e9, re\u00e7oit sa m\u00e8re au pied de la croix"
+        },
+        {
+          "targetId": "james_zebedee",
+          "type": "disciple",
+          "description": "Fr\u00e8re de Jean, l'un des Trois t\u00e9moins de la Transfiguration"
+        },
+        {
+          "targetId": "judas_iscariot",
+          "type": "disciple",
+          "description": "Disciple tra\u00eetre, le livre aux grands-pr\u00eatres pour 30 pi\u00e8ces"
+        },
+        {
+          "targetId": "mary_magdalene",
+          "type": "disciple",
+          "description": "Disciple fid\u00e8le, premi\u00e8re t\u00e9moin de la R\u00e9surrection"
+        },
+        {
+          "targetId": "lazarus",
+          "type": "ami",
+          "description": "Ami qu'il ressuscite apr\u00e8s 4 jours dans le tombeau"
+        },
+        {
+          "targetId": "paul",
+          "type": "ap\u00f4tre",
+          "description": "Lui appara\u00eet sur le chemin de Damas, en fait l'ap\u00f4tre des nations"
+        },
+        {
+          "targetId": "pilate",
+          "type": "ennemi",
+          "description": "Gouverneur romain qui le condamne \u00e0 mort"
+        },
+        {
+          "targetId": "david",
+          "type": "descendant",
+          "description": "Est fils de David selon la chair (Rm 1:3)"
+        },
+        {
+          "targetId": "elijah",
+          "type": "alli\u00e9",
+          "description": "\u00c9lie appara\u00eet \u00e0 ses c\u00f4t\u00e9s lors de la Transfiguration"
+        },
+        {
+          "targetId": "moses",
+          "type": "alli\u00e9",
+          "description": "Mo\u00efse appara\u00eet \u00e0 ses c\u00f4t\u00e9s lors de la Transfiguration"
+        }
+      ],
+      "position": {
+        "x": 400,
+        "y": 300
+      }
+    },
+    {
+      "id": "paul",
+      "level": 1,
+      "era": "new_testament",
+      "name": {
+        "fr": "Paul",
+        "he": "\u05e4\u05b8\u05bc\u05d0\u05d5\u05bc\u05dc\u05d5\u05bc\u05e1",
+        "en": "Paul",
+        "meaning": "Petit (latin Paulus) \u2014 n\u00e9 Sa\u00fcl : demand\u00e9 \u00e0 Dieu"
+      },
+      "description": "Ap\u00f4tre des nations, th\u00e9ologien majeur du christianisme naissant. Pharisien z\u00e9l\u00e9 (Sa\u00fcl de Tarse) qui pers\u00e9cute les chr\u00e9tiens avant une apparition du Christ ressuscit\u00e9 sur le chemin de Damas qui le bouleverse radicalement. Auteur de 13 \u00e9p\u00eetres du NT, il forge la th\u00e9ologie de la gr\u00e2ce, de la justification par la foi et de l'\u00c9glise corps du Christ. Trois voyages missionnaires couvrant tout le bassin m\u00e9diterran\u00e9en. Martyr \u00e0 Rome sous N\u00e9ron vers 67 ap. J.-C.",
+      "references": [
+        "Ac 9",
+        "Ac 13-28",
+        "Rm",
+        "1-2 Co",
+        "Ga",
+        "Ep",
+        "Ph",
+        "Col",
+        "1-2 Th",
+        "1-2 Tm",
+        "Tt",
+        "Phm"
+      ],
+      "death": {
+        "age": null,
+        "cause": "d\u00e9capit\u00e9 \u00e0 Rome sous N\u00e9ron, vers 67 ap. J.-C."
+      },
+      "attributes": [
+        "ap\u00f4tre des nations",
+        "th\u00e9ologien",
+        "missionnaire",
+        "auteur d'\u00e9p\u00eetres"
+      ],
+      "relations": [
+        {
+          "targetId": "jesus",
+          "type": "ma\u00eetre",
+          "description": "Lui appara\u00eet sur le chemin de Damas, le convertit et l'envoie"
+        },
+        {
+          "targetId": "barnabas",
+          "type": "alli\u00e9",
+          "description": "Compagnon de mission lors du 1er voyage missionnaire"
+        },
+        {
+          "targetId": "timothy",
+          "type": "disciple",
+          "description": "Son fils spirituel, accompagnateur et destinataire de deux \u00e9p\u00eetres"
+        },
+        {
+          "targetId": "silas",
+          "type": "alli\u00e9",
+          "description": "Compagnon de mission lors du 2e voyage"
+        },
+        {
+          "targetId": "peter",
+          "type": "alli\u00e9",
+          "description": "L'affronte \u00e0 Antioche sur la question des jud\u00e9o-chr\u00e9tiens (Ga 2:11)"
+        },
+        {
+          "targetId": "stephen",
+          "type": "ennemi",
+          "description": "Garde les manteaux lors du martyre d'\u00c9tienne qu'il approuvait"
+        },
+        {
+          "targetId": "ananias_damascus",
+          "type": "mentor",
+          "description": "Disciple de Damas envoy\u00e9 pour le baptiser apr\u00e8s sa conversion"
+        },
+        {
+          "targetId": "luke",
+          "type": "alli\u00e9",
+          "description": "M\u00e9decin et compagnon fid\u00e8le, auteur des Actes qui relatent ses voyages"
+        }
+      ],
+      "position": {
+        "x": 600,
+        "y": 300
+      }
+    },
+    {
+      "id": "cain",
+      "level": 2,
+      "era": "origins",
+      "name": {
+        "fr": "Ca\u00efn",
+        "he": "\u05e7\u05b7\u05d9\u05b4\u05df",
+        "en": "Cain",
+        "meaning": "Acquisition, forgeron"
+      },
+      "description": "Premier fils d'Adam et \u00c8ve, premier agriculteur et premier meurtrier de l'histoire biblique. Jaloux que son offrande soit moins bien re\u00e7ue que celle d'Abel, il tue son fr\u00e8re. Marqu\u00e9 par Dieu d'un signe protecteur, il est chass\u00e9 en terre de Nod et fonde la premi\u00e8re ville.",
+      "references": [
+        "Gn 4:1-24",
+        "He 11:4",
+        "1 Jn 3:12",
+        "Jude 1:11"
+      ],
+      "relations": [
+        {
+          "targetId": "adam",
+          "type": "p\u00e8re",
+          "description": "Son p\u00e8re"
+        },
+        {
+          "targetId": "eve",
+          "type": "m\u00e8re",
+          "description": "Sa m\u00e8re"
+        },
+        {
+          "targetId": "abel",
+          "type": "fr\u00e8re",
+          "description": "Son fr\u00e8re qu'il tue par jalousie"
+        },
+        {
+          "targetId": "seth",
+          "type": "fr\u00e8re",
+          "description": "Son fr\u00e8re cadet n\u00e9 apr\u00e8s l'exil de Ca\u00efn"
+        }
+      ]
+    },
+    {
+      "id": "abel",
+      "level": 2,
+      "era": "origins",
+      "name": {
+        "fr": "Abel",
+        "he": "\u05d4\u05b6\u05d1\u05b6\u05dc",
+        "en": "Abel",
+        "meaning": "Souffle, vapeur, vanit\u00e9"
+      },
+      "description": "Second fils d'Adam et \u00c8ve, premier berger et premi\u00e8re victime de l'histoire biblique. Son offrande d'agneaux est agr\u00e9\u00e9e par Dieu contrairement \u00e0 celle de Ca\u00efn. Il devient le mod\u00e8le du juste pers\u00e9cut\u00e9, pr\u00e9figuration du Christ selon l'\u00e9p\u00eetre aux H\u00e9breux.",
+      "references": [
+        "Gn 4:2-8",
+        "Mt 23:35",
+        "He 11:4",
+        "He 12:24"
+      ],
+      "relations": [
+        {
+          "targetId": "adam",
+          "type": "p\u00e8re",
+          "description": "Son p\u00e8re"
+        },
+        {
+          "targetId": "eve",
+          "type": "m\u00e8re",
+          "description": "Sa m\u00e8re"
+        },
+        {
+          "targetId": "cain",
+          "type": "fr\u00e8re",
+          "description": "Son fr\u00e8re qui le tue"
+        }
+      ]
+    },
+    {
+      "id": "enoch",
+      "level": 2,
+      "era": "origins",
+      "name": {
+        "fr": "\u00c9noch",
+        "he": "\u05d7\u05b2\u05e0\u05d5\u05b9\u05da\u05b0",
+        "en": "Enoch",
+        "meaning": "Consacr\u00e9, initi\u00e9"
+      },
+      "description": "Septi\u00e8me descendant d'Adam, il 'marcha avec Dieu et disparut car Dieu l'emporta' (Gn 5:24). Unique avec \u00c9lie \u00e0 ne pas avoir connu la mort. Figure myst\u00e9rieuse associ\u00e9e \u00e0 une vaste litt\u00e9rature apocryphe (Livre d'H\u00e9noch). Mentionn\u00e9 dans la g\u00e9n\u00e9alogie de J\u00e9sus en Luc.",
+      "references": [
+        "Gn 5:18-24",
+        "He 11:5",
+        "Jude 1:14",
+        "Lc 3:37"
+      ],
+      "relations": [
+        {
+          "targetId": "lamech_noah",
+          "type": "p\u00e8re",
+          "description": "Son fils, p\u00e8re de No\u00e9"
+        },
+        {
+          "targetId": "noah",
+          "type": "descendant",
+          "description": "Son petit-fils"
+        }
+      ]
+    },
+    {
+      "id": "seth",
+      "level": 2,
+      "era": "origins",
+      "name": {
+        "fr": "Seth",
+        "he": "\u05e9\u05b5\u05c1\u05ea",
+        "en": "Seth",
+        "meaning": "Accord\u00e9, mis \u00e0 la place de"
+      },
+      "description": "Troisi\u00e8me fils d'Adam et \u00c8ve, donn\u00e9 en remplacement d'Abel. Sa lign\u00e9e est celle des justes \u2014 c'est de Seth que descend No\u00e9, et donc toute l'humanit\u00e9 post-d\u00e9luge. Son \u00e9poque voit le d\u00e9but de l'invocation du nom de Dieu.",
+      "references": [
+        "Gn 4:25-26",
+        "Gn 5:3-8",
+        "Lc 3:38"
+      ],
+      "relations": [
+        {
+          "targetId": "adam",
+          "type": "p\u00e8re",
+          "description": "Son p\u00e8re"
+        },
+        {
+          "targetId": "eve",
+          "type": "m\u00e8re",
+          "description": "Sa m\u00e8re"
+        },
+        {
+          "targetId": "cain",
+          "type": "fr\u00e8re",
+          "description": "Son fr\u00e8re a\u00een\u00e9"
+        },
+        {
+          "targetId": "abel",
+          "type": "fr\u00e8re",
+          "description": "Son fr\u00e8re mort avant sa naissance"
+        },
+        {
+          "targetId": "enoch",
+          "type": "descendant",
+          "description": "\u00c9noch est son descendant \u00e0 la 4e g\u00e9n\u00e9ration"
+        },
+        {
+          "targetId": "noah",
+          "type": "descendant",
+          "description": "No\u00e9 est son descendant \u00e0 la 8e g\u00e9n\u00e9ration"
+        }
+      ]
+    },
+    {
+      "id": "shem",
+      "level": 2,
+      "era": "origins",
+      "name": {
+        "fr": "Sem",
+        "he": "\u05e9\u05b5\u05c1\u05dd",
+        "en": "Shem",
+        "meaning": "Nom, renom"
+      },
+      "description": "Fils a\u00een\u00e9 de No\u00e9, anc\u00eatre des peuples s\u00e9mites : H\u00e9breux, Arabes, Aram\u00e9ens, Assyriens. La Bible trace la lign\u00e9e messianique \u00e0 travers lui jusqu'\u00e0 Abraham.",
+      "references": [
+        "Gn 5:32",
+        "Gn 9:26",
+        "Gn 10:21-31",
+        "Gn 11:10-26",
+        "Lc 3:36"
+      ],
+      "relations": [
+        {
+          "targetId": "noah",
+          "type": "p\u00e8re",
+          "description": "Son p\u00e8re"
+        },
+        {
+          "targetId": "ham",
+          "type": "fr\u00e8re",
+          "description": "Son fr\u00e8re cadet"
+        },
+        {
+          "targetId": "japheth",
+          "type": "fr\u00e8re",
+          "description": "Son fr\u00e8re cadet"
+        },
+        {
+          "targetId": "abraham",
+          "type": "descendant",
+          "description": "Abraham est son descendant \u00e0 la 9e g\u00e9n\u00e9ration"
+        }
+      ]
+    },
+    {
+      "id": "ham",
+      "level": 2,
+      "era": "origins",
+      "name": {
+        "fr": "Cham",
+        "he": "\u05d7\u05b8\u05dd",
+        "en": "Ham",
+        "meaning": "Chaud, sombre"
+      },
+      "description": "Second fils de No\u00e9, anc\u00eatre des peuples africains et canan\u00e9ens. Sa faute de voir la nudit\u00e9 de No\u00e9 entra\u00eene la mal\u00e9diction de son fils Canaan. Anc\u00eatre notamment des \u00c9gyptiens, \u00c9thiopiens, Philistins et Canan\u00e9ens.",
+      "references": [
+        "Gn 5:32",
+        "Gn 9:20-27",
+        "Gn 10:6-20"
+      ],
+      "relations": [
+        {
+          "targetId": "noah",
+          "type": "p\u00e8re",
+          "description": "Son p\u00e8re qu'il voit nu dans son ivresse"
+        },
+        {
+          "targetId": "shem",
+          "type": "fr\u00e8re",
+          "description": "Son fr\u00e8re a\u00een\u00e9"
+        },
+        {
+          "targetId": "japheth",
+          "type": "fr\u00e8re",
+          "description": "Son fr\u00e8re"
+        }
+      ]
+    },
+    {
+      "id": "japheth",
+      "level": 2,
+      "era": "origins",
+      "name": {
+        "fr": "Japhet",
+        "he": "\u05d9\u05b6\u05e4\u05b6\u05ea",
+        "en": "Japheth",
+        "meaning": "\u00c9tendu, beau"
+      },
+      "description": "Troisi\u00e8me fils de No\u00e9, anc\u00eatre des peuples indo-europ\u00e9ens : Grecs, M\u00e8des, Perses, peuples des c\u00f4tes. Avec Sem, couvre la nudit\u00e9 de No\u00e9 sans regarder et re\u00e7oit la b\u00e9n\u00e9diction.",
+      "references": [
+        "Gn 5:32",
+        "Gn 9:27",
+        "Gn 10:2-5"
+      ],
+      "relations": [
+        {
+          "targetId": "noah",
+          "type": "p\u00e8re",
+          "description": "Son p\u00e8re"
+        },
+        {
+          "targetId": "shem",
+          "type": "fr\u00e8re",
+          "description": "Son fr\u00e8re a\u00een\u00e9"
+        },
+        {
+          "targetId": "ham",
+          "type": "fr\u00e8re",
+          "description": "Son fr\u00e8re"
+        }
+      ]
+    },
+    {
+      "id": "sarah",
+      "level": 2,
+      "era": "patriarchs",
+      "name": {
+        "fr": "Sara",
+        "he": "\u05e9\u05b8\u05c2\u05e8\u05b8\u05d4",
+        "en": "Sarah",
+        "meaning": "Princesse (anciennement Sara\u00ef : ma princesse)"
+      },
+      "description": "\u00c9pouse d'Abraham, m\u00e8re d'Isaac, premi\u00e8re des matriarches. St\u00e9rile jusqu'\u00e0 ses 90 ans, elle rit \u00e0 l'annonce de sa grossesse \u2014 et son fils s'appellera Isaac ('il rit'). Figure de la promesse et de la gr\u00e2ce divine qui triomphe de l'impossible. Seule femme de l'AT dont l'\u00e2ge \u00e0 la mort est mentionn\u00e9 (127 ans).",
+      "references": [
+        "Gn 12-23",
+        "Rm 4:19",
+        "He 11:11",
+        "1 P 3:6"
+      ],
+      "relations": [
+        {
+          "targetId": "abraham",
+          "type": "\u00e9poux",
+          "description": "Son \u00e9poux, aussi son demi-fr\u00e8re selon Gn 20:12"
+        },
+        {
+          "targetId": "isaac",
+          "type": "fils",
+          "description": "Son fils unique, n\u00e9 \u00e0 ses 90 ans"
+        },
+        {
+          "targetId": "hagar",
+          "type": "rival",
+          "description": "Sa servante \u00e9gyptienne dont elle exige le renvoi"
+        }
+      ]
+    },
+    {
+      "id": "hagar",
+      "level": 2,
+      "era": "patriarchs",
+      "name": {
+        "fr": "Agar",
+        "he": "\u05d4\u05b8\u05d2\u05b8\u05e8",
+        "en": "Hagar",
+        "meaning": "\u00c9trang\u00e8re, fugitive"
+      },
+      "description": "Servante \u00e9gyptienne de Sara, seconde \u00e9pouse d'Abraham par arrangement. M\u00e8re d'Isma\u00ebl. Chass\u00e9e deux fois dans le d\u00e9sert, elle re\u00e7oit des visitations divines qui la r\u00e9confortent et lui promettent que son fils sera p\u00e8re d'une grande nation. Premier personnage f\u00e9minin \u00e0 recevoir une annonce divine.",
+      "references": [
+        "Gn 16",
+        "Gn 21:9-21",
+        "Ga 4:24-25"
+      ],
+      "relations": [
+        {
+          "targetId": "abraham",
+          "type": "\u00e9poux",
+          "description": "Son ma\u00eetre devenu son mari sur arrangement de Sara"
+        },
+        {
+          "targetId": "sarah",
+          "type": "rival",
+          "description": "Sa ma\u00eetresse qui la fait chasser"
+        },
+        {
+          "targetId": "ishmael",
+          "type": "fils",
+          "description": "Son fils, anc\u00eatre des peuples arabes"
+        }
+      ]
+    },
+    {
+      "id": "isaac",
+      "level": 2,
+      "era": "patriarchs",
+      "name": {
+        "fr": "Isaac",
+        "he": "\u05d9\u05b4\u05e6\u05b0\u05d7\u05b8\u05e7",
+        "en": "Isaac",
+        "meaning": "Il rit"
+      },
+      "description": "Fils de la promesse, deuxi\u00e8me patriarche. Sa naissance miraculeuse de parents centenaires symbolise la toute-puissance divine. L'\u00e9pisode de l'Aqeda (Gn 22) \u2014 o\u00f9 Dieu demande son sacrifice avant de retenir la main d'Abraham \u2014 est un des textes les plus comment\u00e9s de l'histoire religieuse. Pr\u00e9figure le sacrifice du Christ.",
+      "references": [
+        "Gn 17:19",
+        "Gn 21-27",
+        "Gn 35:29",
+        "Rm 9:7",
+        "He 11:17-20"
+      ],
+      "relations": [
+        {
+          "targetId": "abraham",
+          "type": "p\u00e8re",
+          "description": "Son p\u00e8re qui consentit \u00e0 l'offrir en sacrifice"
+        },
+        {
+          "targetId": "sarah",
+          "type": "m\u00e8re",
+          "description": "Sa m\u00e8re, n\u00e9e \u00e0 elle \u00e0 ses 90 ans"
+        },
+        {
+          "targetId": "rebekah",
+          "type": "\u00e9pouse",
+          "description": "Son \u00e9pouse, choisie pour lui par le serviteur d'Abraham"
+        },
+        {
+          "targetId": "jacob",
+          "type": "fils",
+          "description": "Son fils cadet qui lui vole la b\u00e9n\u00e9diction"
+        },
+        {
+          "targetId": "esau",
+          "type": "fils",
+          "description": "Son fils a\u00een\u00e9 d\u00e9poss\u00e9d\u00e9 de la b\u00e9n\u00e9diction"
+        },
+        {
+          "targetId": "ishmael",
+          "type": "demi-fr\u00e8re",
+          "description": "Son demi-fr\u00e8re, fils d'Abraham et d'Agar"
+        }
+      ]
+    },
+    {
+      "id": "rebekah",
+      "level": 2,
+      "era": "patriarchs",
+      "name": {
+        "fr": "R\u00e9becca",
+        "he": "\u05e8\u05b4\u05d1\u05b0\u05e7\u05b8\u05d4",
+        "en": "Rebekah",
+        "meaning": "Enla\u00e7ante, captivante"
+      },
+      "description": "Seconde matriarche, \u00e9pouse d'Isaac. Choisie providentiellement par le serviteur d'Abraham. Re\u00e7oit une r\u00e9v\u00e9lation divine sur ses jumeaux : l'a\u00een\u00e9 servira le cadet. Orchestre la ruse permettant \u00e0 Jacob d'obtenir la b\u00e9n\u00e9diction d'Isaac \u00e0 la place d'\u00c9sa\u00fc.",
+      "references": [
+        "Gn 24",
+        "Gn 25:21-28",
+        "Gn 27",
+        "Rm 9:10-12"
+      ],
+      "relations": [
+        {
+          "targetId": "isaac",
+          "type": "\u00e9poux",
+          "description": "Son \u00e9poux"
+        },
+        {
+          "targetId": "jacob",
+          "type": "fils",
+          "description": "Son fils pr\u00e9f\u00e9r\u00e9 qu'elle aide \u00e0 obtenir la b\u00e9n\u00e9diction"
+        },
+        {
+          "targetId": "esau",
+          "type": "fils",
+          "description": "Son fils a\u00een\u00e9 d\u00e9poss\u00e9d\u00e9"
+        }
+      ]
+    },
+    {
+      "id": "jacob",
+      "level": 2,
+      "era": "patriarchs",
+      "name": {
+        "fr": "Jacob",
+        "he": "\u05d9\u05b7\u05e2\u05b2\u05e7\u05b9\u05d1",
+        "en": "Jacob",
+        "meaning": "Il saisit le talon / Il supplante \u2014 renomm\u00e9 Isra\u00ebl : il lutte avec Dieu"
+      },
+      "description": "Troisi\u00e8me patriarche, p\u00e8re des douze tribus d'Isra\u00ebl. Ruse d'abord, puis transform\u00e9 apr\u00e8s avoir lutt\u00e9 toute une nuit avec un ange (Dieu ?). Renomm\u00e9 Isra\u00ebl, donnant son nom au peuple entier. P\u00e8re de douze fils qui sont les anc\u00eatres des douze tribus. Sa vie est un voyage de la ruse vers la gr\u00e2ce.",
+      "references": [
+        "Gn 25-50",
+        "Os 12:3-4",
+        "Rm 9:13"
+      ],
+      "relations": [
+        {
+          "targetId": "isaac",
+          "type": "p\u00e8re",
+          "description": "Son p\u00e8re"
+        },
+        {
+          "targetId": "rebekah",
+          "type": "m\u00e8re",
+          "description": "Sa m\u00e8re"
+        },
+        {
+          "targetId": "esau",
+          "type": "fr\u00e8re",
+          "description": "Son fr\u00e8re jumeau a\u00een\u00e9 d\u00e9poss\u00e9d\u00e9"
+        },
+        {
+          "targetId": "leah",
+          "type": "\u00e9pouse",
+          "description": "Premi\u00e8re \u00e9pouse impos\u00e9e par Laban, m\u00e8re de 6 fils et Dina"
+        },
+        {
+          "targetId": "rachel",
+          "type": "\u00e9pouse",
+          "description": "\u00c9pouse bien-aim\u00e9e, m\u00e8re de Joseph et Benjamin"
+        },
+        {
+          "targetId": "joseph_patriarch",
+          "type": "fils",
+          "description": "Son fils pr\u00e9f\u00e9r\u00e9 de Rachel, vendu par ses fr\u00e8res en \u00c9gypte"
+        },
+        {
+          "targetId": "judah",
+          "type": "fils",
+          "description": "Fils de L\u00e9a, anc\u00eatre de David et du Messie"
+        },
+        {
+          "targetId": "levi",
+          "type": "fils",
+          "description": "Fils de L\u00e9a, anc\u00eatre de la tribu sacerdotale"
+        },
+        {
+          "targetId": "benjamin",
+          "type": "fils",
+          "description": "Dernier fils de Rachel, le plus jeune"
+        },
+        {
+          "targetId": "laban",
+          "type": "beau-p\u00e8re",
+          "description": "Son oncle maternel et beau-p\u00e8re qui l'exploite 20 ans"
+        }
+      ]
+    },
+    {
+      "id": "joseph_patriarch",
+      "level": 2,
+      "era": "patriarchs",
+      "name": {
+        "fr": "Joseph",
+        "he": "\u05d9\u05d5\u05b9\u05e1\u05b5\u05e3",
+        "en": "Joseph",
+        "meaning": "Il ajoutera"
+      },
+      "description": "Onzi\u00e8me fils de Jacob, fils bien-aim\u00e9 de Rachel. Vendu comme esclave par ses fr\u00e8res jaloux de son manteau et de ses r\u00eaves. En \u00c9gypte, emprisonn\u00e9 injustement, puis promu vizir du Pharaon gr\u00e2ce \u00e0 son don d'interpr\u00e9tation des r\u00eaves. Sauve l'\u00c9gypte et sa famille de la famine. Mod\u00e8le de pardon et de providence divine : 'Vous aviez m\u00e9dit\u00e9 de me faire du mal, Dieu l'a m\u00e9dit\u00e9 pour mon bien' (Gn 50:20). Pr\u00e9figuration du Christ selon les P\u00e8res de l'\u00c9glise.",
+      "references": [
+        "Gn 37-50",
+        "Ps 105:17-22",
+        "Ac 7:9-16",
+        "He 11:22"
+      ],
+      "relations": [
+        {
+          "targetId": "jacob",
+          "type": "p\u00e8re",
+          "description": "Son p\u00e8re qui lui accorde sa pr\u00e9f\u00e9rence"
+        },
+        {
+          "targetId": "rachel",
+          "type": "m\u00e8re",
+          "description": "Sa m\u00e8re bien-aim\u00e9e morte en accouchant de Benjamin"
+        },
+        {
+          "targetId": "benjamin",
+          "type": "fr\u00e8re",
+          "description": "Son seul fr\u00e8re de m\u00eame m\u00e8re"
+        },
+        {
+          "targetId": "judah",
+          "type": "fr\u00e8re",
+          "description": "Fr\u00e8re qui propose de le vendre plut\u00f4t que de le tuer"
+        },
+        {
+          "targetId": "potiphar",
+          "type": "ma\u00eetre",
+          "description": "Chef de la garde de Pharaon qui l'ach\u00e8te puis l'emprisonne"
+        },
+        {
+          "targetId": "pharaoh_joseph",
+          "type": "ma\u00eetre",
+          "description": "Pharaon qui le nomme vizir apr\u00e8s l'interpr\u00e9tation de ses r\u00eaves"
+        },
+        {
+          "targetId": "asenath",
+          "type": "\u00e9pouse",
+          "description": "Fille du pr\u00eatre de On, \u00e9pouse accord\u00e9e par Pharaon"
+        }
+      ]
+    },
+    {
+      "id": "aaron",
+      "level": 2,
+      "era": "exodus",
+      "name": {
+        "fr": "Aaron",
+        "he": "\u05d0\u05b7\u05d4\u05b2\u05e8\u05b9\u05df",
+        "en": "Aaron",
+        "meaning": "Incertain : montagne, exalt\u00e9, ou illumin\u00e9"
+      },
+      "description": "Fr\u00e8re a\u00een\u00e9 de Mo\u00efse, premier grand-pr\u00eatre d'Isra\u00ebl, fondateur du sacerdoce l\u00e9vitique. Porte-parole de Mo\u00efse devant Pharaon. Sa faiblesse lors du veau d'or (Ex 32) contraste avec la fermet\u00e9 de son fr\u00e8re. Anc\u00eatre de tous les pr\u00eatres (cohen) dans la tradition juive.",
+      "references": [
+        "Ex 4-40",
+        "Lv 8-10",
+        "Nb 17",
+        "He 5:4"
+      ],
+      "relations": [
+        {
+          "targetId": "moses",
+          "type": "fr\u00e8re",
+          "description": "Son fr\u00e8re cadet dont il est le porte-parole"
+        },
+        {
+          "targetId": "miriam",
+          "type": "s\u0153ur",
+          "description": "Sa s\u0153ur a\u00een\u00e9e proph\u00e9tesse"
+        },
+        {
+          "targetId": "eliezer",
+          "type": "fils",
+          "description": "Son fils, anc\u00eatre des pr\u00eatres sadduc\u00e9ens"
+        }
+      ]
+    },
+    {
+      "id": "miriam",
+      "level": 2,
+      "era": "exodus",
+      "name": {
+        "fr": "Myriam",
+        "he": "\u05de\u05b4\u05e8\u05b0\u05d9\u05b8\u05dd",
+        "en": "Miriam",
+        "meaning": "Incertain : aim\u00e9e, mer am\u00e8re, ou r\u00e9bellion"
+      },
+      "description": "S\u0153ur a\u00een\u00e9e de Mo\u00efse et Aaron, proph\u00e9tesse d'Isra\u00ebl. Dans son enfance, veille sur le b\u00e9b\u00e9 Mo\u00efse dans le Nil. Apr\u00e8s le passage de la mer Rouge, m\u00e8ne le chant de victoire des femmes. Frapp\u00e9e de l\u00e8pre pour avoir critiqu\u00e9 Mo\u00efse avec Aaron, gu\u00e9rie par l'intercession de Mo\u00efse.",
+      "references": [
+        "Ex 2:4-8",
+        "Ex 15:20-21",
+        "Nb 12",
+        "Mi 6:4"
+      ],
+      "relations": [
+        {
+          "targetId": "moses",
+          "type": "fr\u00e8re",
+          "description": "Son fr\u00e8re cadet qu'elle prot\u00e8ge b\u00e9b\u00e9 dans le Nil"
+        },
+        {
+          "targetId": "aaron",
+          "type": "fr\u00e8re",
+          "description": "Son fr\u00e8re"
+        }
+      ]
+    },
+    {
+      "id": "joshua",
+      "level": 2,
+      "era": "exodus",
+      "name": {
+        "fr": "Josu\u00e9",
+        "he": "\u05d9\u05b0\u05d4\u05d5\u05b9\u05e9\u05bb\u05c1\u05e2\u05b7",
+        "en": "Joshua",
+        "meaning": "YHWH sauve \u2014 m\u00eame racine que J\u00e9sus"
+      },
+      "description": "Assistant et successeur de Mo\u00efse, conqu\u00e9rant de Canaan. M\u00e8ne Isra\u00ebl \u00e0 la travers\u00e9e du Jourdain (miracle analogue \u00e0 la mer Rouge) et \u00e0 la prise de J\u00e9richo (chute des murs au son des trompettes). Son nom Yehoshua est la forme longue de Yeshua \u2014 J\u00e9sus \u2014, connexion th\u00e9ologique soulign\u00e9e par les chr\u00e9tiens.",
+      "references": [
+        "Ex 17:9-14",
+        "Nb 14:6-9",
+        "Jos 1-24",
+        "He 4:8"
+      ],
+      "relations": [
+        {
+          "targetId": "moses",
+          "type": "ma\u00eetre",
+          "description": "Son ma\u00eetre dont il est l'assistant et le successeur"
+        },
+        {
+          "targetId": "caleb",
+          "type": "alli\u00e9",
+          "description": "Le seul autre espion \u00e0 avoir fait confiance \u00e0 Dieu, son compagnon"
+        },
+        {
+          "targetId": "rahab",
+          "type": "alli\u00e9",
+          "description": "Prostitu\u00e9e de J\u00e9richo qui cache ses espions"
+        }
+      ]
+    },
+    {
+      "id": "deborah",
+      "level": 2,
+      "era": "judges_kings",
+      "name": {
+        "fr": "D\u00e9borah",
+        "he": "\u05d3\u05b0\u05bc\u05d1\u05d5\u05b9\u05e8\u05b8\u05d4",
+        "en": "Deborah",
+        "meaning": "Abeille"
+      },
+      "description": "Seule juge femme d'Isra\u00ebl, proph\u00e9tesse, po\u00e9tesse. Dirige militairement Isra\u00ebl contre l'arm\u00e9e canan\u00e9enne de Sisera. Son cantique (Jg 5) est l'un des plus anciens textes po\u00e9tiques de la Bible. Symbole de la sagesse et du leadership f\u00e9minin dans la tradition h\u00e9bra\u00efque.",
+      "references": [
+        "Jg 4-5"
+      ],
+      "relations": [
+        {
+          "targetId": "barak",
+          "type": "lieutenant",
+          "description": "Chef militaire qu'elle mandate et accompagne au combat"
+        },
+        {
+          "targetId": "jael",
+          "type": "alli\u00e9",
+          "description": "Femme qui tue Sisera, achevant la victoire"
+        }
+      ]
+    },
+    {
+      "id": "samson",
+      "level": 2,
+      "era": "judges_kings",
+      "name": {
+        "fr": "Samson",
+        "he": "\u05e9\u05b4\u05c1\u05de\u05b0\u05e9\u05c1\u05d5\u05b9\u05df",
+        "en": "Samson",
+        "meaning": "Soleil, solaire"
+      },
+      "description": "Juge nazar\u00e9en \u00e0 la force surhumaine li\u00e9e \u00e0 ses cheveux longs. Consacr\u00e9 \u00e0 Dieu d\u00e8s avant sa naissance. Guerrier solitaire contre les Philistins, sa vie est une suite de prouesses et de faiblesses : trahison par Dalila, aveuglement, emprisonnement. Sa mort \u2014 renversant les colonnes du temple de Dagon \u2014 tue plus de Philistins que sa vie enti\u00e8re. H\u00e9ros tragique par excellence.",
+      "references": [
+        "Jg 13-16",
+        "He 11:32"
+      ],
+      "relations": [
+        {
+          "targetId": "delilah",
+          "type": "\u00e9pouse",
+          "description": "La Philistine qui d\u00e9couvre le secret de sa force et le livre"
+        },
+        {
+          "targetId": "manoah",
+          "type": "p\u00e8re",
+          "description": "Son p\u00e8re de la tribu de Dan"
+        }
+      ]
+    },
+    {
+      "id": "samuel",
+      "level": 2,
+      "era": "judges_kings",
+      "name": {
+        "fr": "Samuel",
+        "he": "\u05e9\u05b0\u05c1\u05de\u05d5\u05bc\u05d0\u05b5\u05dc",
+        "en": "Samuel",
+        "meaning": "Entendu de Dieu / Son nom est Dieu"
+      },
+      "description": "Dernier des juges, premier des grands proph\u00e8tes de l'\u00e8re royale. Consacr\u00e9 \u00e0 Dieu par sa m\u00e8re Hannah avant m\u00eame sa conception. Entend l'appel divin enfant dans le Temple. Oint Sa\u00fcl puis David comme rois. Charni\u00e8re entre la th\u00e9ocratie et la monarchie isra\u00e9lite.",
+      "references": [
+        "1 S 1-28",
+        "Ac 3:24",
+        "He 11:32"
+      ],
+      "relations": [
+        {
+          "targetId": "hannah",
+          "type": "m\u00e8re",
+          "description": "Sa m\u00e8re qui le voue \u00e0 Dieu avant sa naissance"
+        },
+        {
+          "targetId": "eli",
+          "type": "mentor",
+          "description": "Pr\u00eatre du Temple qui l'\u00e9l\u00e8ve et l'initie"
+        },
+        {
+          "targetId": "saul",
+          "type": "successeur",
+          "description": "Premier roi qu'il oint et plus tard rejette"
+        },
+        {
+          "targetId": "david",
+          "type": "successeur",
+          "description": "Second roi qu'il oint secr\u00e8tement \u00e0 Bethl\u00e9em"
+        }
+      ]
+    },
+    {
+      "id": "saul",
+      "level": 2,
+      "era": "judges_kings",
+      "name": {
+        "fr": "Sa\u00fcl",
+        "he": "\u05e9\u05b8\u05c1\u05d0\u05d5\u05bc\u05dc",
+        "en": "Saul",
+        "meaning": "Demand\u00e9, sollicit\u00e9"
+      },
+      "description": "Premier roi d'Isra\u00ebl, de la tribu de Benjamin. Grand, beau, charismatique \u2014 le roi que le peuple r\u00e9clamait. Sa d\u00e9sob\u00e9issance r\u00e9p\u00e9t\u00e9e aux commandements divins entra\u00eene son rejet. Progressivement rong\u00e9 par la jalousie envers David. Meurt au combat face aux Philistins sur le mont Guilboa.",
+      "references": [
+        "1 S 9-31",
+        "2 S 1"
+      ],
+      "relations": [
+        {
+          "targetId": "samuel",
+          "type": "mentor",
+          "description": "Proph\u00e8te qui l'oint et le rejette ensuite"
+        },
+        {
+          "targetId": "david",
+          "type": "rival",
+          "description": "Son successeur d\u00e9sign\u00e9 qu'il pers\u00e9cute"
+        },
+        {
+          "targetId": "jonathan",
+          "type": "fils",
+          "description": "Son fils, meilleur ami de David"
+        }
+      ]
+    },
+    {
+      "id": "solomon",
+      "level": 2,
+      "era": "judges_kings",
+      "name": {
+        "fr": "Salomon",
+        "he": "\u05e9\u05b0\u05c1\u05dc\u05b9\u05de\u05b9\u05d4",
+        "en": "Solomon",
+        "meaning": "Paix, pacifique (Shalom)"
+      },
+      "description": "Troisi\u00e8me roi d'Isra\u00ebl, fils de David et Bethsab\u00e9e. R\u00e8gne d'or de la monarchie isra\u00e9lite : construction du Temple de J\u00e9rusalem, sagesse proverbiale, richesse incomparable. Auteur pr\u00e9sum\u00e9 du Cantique des Cantiques, des Proverbes et de l'Eccl\u00e9siaste. Sa polygamie et ses \u00e9pouses \u00e9trang\u00e8res l'entra\u00eenent dans l'idol\u00e2trie, provoquant la division du royaume \u00e0 sa mort.",
+      "references": [
+        "1 R 1-11",
+        "2 Ch 1-9",
+        "Mt 6:29",
+        "Mt 12:42"
+      ],
+      "relations": [
+        {
+          "targetId": "david",
+          "type": "p\u00e8re",
+          "description": "Son p\u00e8re qui lui transmet la royaut\u00e9"
+        },
+        {
+          "targetId": "bathsheba",
+          "type": "m\u00e8re",
+          "description": "Sa m\u00e8re qui man\u0153uvre pour sa succession"
+        },
+        {
+          "targetId": "jeroboam",
+          "type": "rival",
+          "description": "Chef rebelle qui divise le royaume \u00e0 sa mort"
+        },
+        {
+          "targetId": "queen_of_sheba",
+          "type": "alli\u00e9",
+          "description": "Reine venue \u00e9prouver sa sagesse"
+        }
+      ]
+    },
+    {
+      "id": "elisha",
+      "level": 2,
+      "era": "prophets_exile",
+      "name": {
+        "fr": "\u00c9lis\u00e9e",
+        "he": "\u05d0\u05b1\u05dc\u05b4\u05d9\u05e9\u05b8\u05c1\u05e2",
+        "en": "Elisha",
+        "meaning": "Mon Dieu est salut"
+      },
+      "description": "Successeur et disciple d'\u00c9lie, re\u00e7oit double portion de son esprit. R\u00e9alise deux fois plus de miracles qu'\u00c9lie : multiplie l'huile, ressuscite un enfant, gu\u00e9rit Naaman le l\u00e9preux syrien. Figure de la g\u00e9n\u00e9rosit\u00e9 et de la compassion proph\u00e9tiques. Ses miracles annoncent ceux de J\u00e9sus.",
+      "references": [
+        "1 R 19:16-21",
+        "2 R 2-13",
+        "Lc 4:27"
+      ],
+      "relations": [
+        {
+          "targetId": "elijah",
+          "type": "ma\u00eetre",
+          "description": "Son ma\u00eetre dont il re\u00e7oit double portion d'esprit"
+        },
+        {
+          "targetId": "naaman",
+          "type": "alli\u00e9",
+          "description": "G\u00e9n\u00e9ral syrien l\u00e9preux qu'il gu\u00e9rit"
+        }
+      ]
+    },
+    {
+      "id": "ezekiel",
+      "level": 2,
+      "era": "prophets_exile",
+      "name": {
+        "fr": "\u00c9z\u00e9chiel",
+        "he": "\u05d9\u05b0\u05d7\u05b6\u05d6\u05b0\u05e7\u05b5\u05d0\u05dc",
+        "en": "Ezekiel",
+        "meaning": "Dieu fortifie"
+      },
+      "description": "Proph\u00e8te de l'exil babylonien, pr\u00eatre deport\u00e9 \u00e0 Babylone en 597 av. J.-C. Visions grandioses et symbolisme complexe : char de feu (merkabah), vall\u00e9e d'ossements dess\u00e9ch\u00e9s, nouveau Temple eschatologique. Introduit la notion de responsabilit\u00e9 individuelle face \u00e0 Dieu (Ez 18), r\u00e9volution th\u00e9ologique majeure.",
+      "references": [
+        "Ez 1-48",
+        "Ez 18",
+        "Ez 37"
+      ],
+      "relations": [
+        {
+          "targetId": "jeremiah",
+          "type": "alli\u00e9",
+          "description": "Contemporain proph\u00e9tisant \u00e0 J\u00e9rusalem pendant son exil \u00e0 Babylone"
+        },
+        {
+          "targetId": "daniel",
+          "type": "alli\u00e9",
+          "description": "Contemporain exil\u00e9 lui aussi \u00e0 Babylone"
+        }
+      ]
+    },
+    {
+      "id": "daniel",
+      "level": 2,
+      "era": "prophets_exile",
+      "name": {
+        "fr": "Daniel",
+        "he": "\u05d3\u05b8\u05bc\u05e0\u05b4\u05d9\u05b5\u05bc\u05d0\u05dc",
+        "en": "Daniel",
+        "meaning": "Dieu est mon juge"
+      },
+      "description": "Jeune noble d\u00e9port\u00e9 \u00e0 Babylone, refuse de se compromettre avec la culture babylonienne. Interpr\u00e8te des r\u00eaves royaux, survit \u00e0 la fosse aux lions. Ses visions apocalyptiques (quatre royaumes, Fils de l'homme) ont profond\u00e9ment influenc\u00e9 l'eschatologie juive et chr\u00e9tienne.",
+      "references": [
+        "Dn 1-12",
+        "Mt 24:15",
+        "Ap"
+      ],
+      "relations": [
+        {
+          "targetId": "nebuchadnezzar",
+          "type": "ma\u00eetre",
+          "description": "Roi de Babylone dont il interpr\u00e8te les r\u00eaves"
+        },
+        {
+          "targetId": "ezekiel",
+          "type": "alli\u00e9",
+          "description": "Contemporain exil\u00e9 aussi \u00e0 Babylone"
+        },
+        {
+          "targetId": "shadrach",
+          "type": "alli\u00e9",
+          "description": "Ami h\u00e9breu jet\u00e9 dans la fournaise ardente"
+        },
+        {
+          "targetId": "meshach",
+          "type": "alli\u00e9",
+          "description": "Ami h\u00e9breu jet\u00e9 dans la fournaise ardente"
+        },
+        {
+          "targetId": "abednego",
+          "type": "alli\u00e9",
+          "description": "Ami h\u00e9breu jet\u00e9 dans la fournaise ardente"
+        }
+      ]
+    },
+    {
+      "id": "ezra",
+      "level": 2,
+      "era": "prophets_exile",
+      "name": {
+        "fr": "Esdras",
+        "he": "\u05e2\u05b6\u05d6\u05b0\u05e8\u05b8\u05d0",
+        "en": "Ezra",
+        "meaning": "Aide, secours"
+      },
+      "description": "Pr\u00eatre-scribe du retour d'exil, r\u00e9formateur religieux. Ram\u00e8ne les exil\u00e9s de Babylone \u00e0 J\u00e9rusalem sous le roi perse Artaxerx\u00e8s. Lit publiquement la Torah devant le peuple assembl\u00e9 et instaure une r\u00e9forme rigoureuse incluant la dissolution des mariages mixtes. P\u00e8re du juda\u00efsme post-exilique.",
+      "references": [
+        "Esd 7-10",
+        "N\u00e9 8"
+      ],
+      "relations": [
+        {
+          "targetId": "nehemiah",
+          "type": "alli\u00e9",
+          "description": "Gouverneur de Juda contemporain, partenaire de la r\u00e9forme"
+        }
+      ]
+    },
+    {
+      "id": "nehemiah",
+      "level": 2,
+      "era": "prophets_exile",
+      "name": {
+        "fr": "N\u00e9h\u00e9mie",
+        "he": "\u05e0\u05b0\u05d7\u05b6\u05de\u05b0\u05d9\u05b8\u05d4",
+        "en": "Nehemiah",
+        "meaning": "YHWH console"
+      },
+      "description": "\u00c9chanson du roi perse Artaxerx\u00e8s, puis gouverneur de Juda. Reconstruit les murailles de J\u00e9rusalem en 52 jours malgr\u00e9 l'opposition. R\u00e9forme sociale et religieuse : annulation des dettes, r\u00e9installation des L\u00e9vites, respect du sabbat. Son livre est le dernier r\u00e9cit historique de l'AT canonique.",
+      "references": [
+        "N\u00e9 1-13"
+      ],
+      "relations": [
+        {
+          "targetId": "ezra",
+          "type": "alli\u00e9",
+          "description": "Pr\u00eatre-scribe contemporain, partenaire de la r\u00e9forme"
+        },
+        {
+          "targetId": "artaxerxes",
+          "type": "ma\u00eetre",
+          "description": "Roi perse qui l'autorise \u00e0 reconstruire J\u00e9rusalem"
+        }
+      ]
+    },
+    {
+      "id": "mary_mother",
+      "level": 2,
+      "era": "new_testament",
+      "name": {
+        "fr": "Marie",
+        "he": "\u05de\u05b4\u05e8\u05b0\u05d9\u05b8\u05dd",
+        "en": "Mary",
+        "meaning": "M\u00eame racine que Myriam : aim\u00e9e / mer am\u00e8re"
+      },
+      "description": "M\u00e8re de J\u00e9sus, vierge lors de sa conception selon les \u00e9vangiles. Prononce le Magnificat (Lc 1:46-55), l'un des plus beaux chants de l'\u00c9criture. Pr\u00e9sente au d\u00e9but du minist\u00e8re de J\u00e9sus (noces de Cana), au pied de la croix et au C\u00e9nacle \u00e0 Pentec\u00f4te. V\u00e9n\u00e9r\u00e9e diff\u00e9remment selon les traditions : M\u00e8re de Dieu (Theotokos) dans le catholicisme et l'orthodoxie, m\u00e8re du Christ dans le protestantisme.",
+      "references": [
+        "Lc 1:26-56",
+        "Lc 2",
+        "Jn 2:1-11",
+        "Jn 19:25-27",
+        "Ac 1:14"
+      ],
+      "relations": [
+        {
+          "targetId": "jesus",
+          "type": "fils",
+          "description": "Son fils, con\u00e7u virginalement de l'Esprit Saint"
+        },
+        {
+          "targetId": "joseph_nt",
+          "type": "\u00e9poux",
+          "description": "Son \u00e9poux l\u00e9gal, charpentier de Nazareth"
+        },
+        {
+          "targetId": "elizabeth",
+          "type": "cousine",
+          "description": "Sa cousine, m\u00e8re de Jean-Baptiste"
+        },
+        {
+          "targetId": "john_apostle",
+          "type": "disciple",
+          "description": "Lui est confi\u00e9e par J\u00e9sus mourant comme fils de substitution"
+        }
+      ]
+    },
+    {
+      "id": "peter",
+      "level": 2,
+      "era": "new_testament",
+      "name": {
+        "fr": "Pierre",
+        "he": "\u05e9\u05b4\u05c1\u05de\u05b0\u05e2\u05d5\u05b9\u05df",
+        "en": "Peter",
+        "meaning": "Sim\u00e9on/Simon (h\u00e9breu) \u2014 renomm\u00e9 Pierre : rocher (grec Petros, aram\u00e9en Kepha)"
+      },
+      "description": "Ap\u00f4tre principal de J\u00e9sus, p\u00eacheur de Galil\u00e9e. Impulsif, courageux, et fragile \u2014 il marche sur l'eau puis doute, confesse J\u00e9sus comme Messie et le renie trois fois la m\u00eame nuit. J\u00e9sus lui dit : 'Tu es Pierre, et sur cette roche je b\u00e2tirai mon \u00c9glise' (Mt 16:18). Apr\u00e8s Pentec\u00f4te, devient le leader incontest\u00e9 de la premi\u00e8re \u00c9glise de J\u00e9rusalem. Martyr \u00e0 Rome, crucifi\u00e9 la t\u00eate en bas selon la tradition.",
+      "references": [
+        "Mt 4:18-20",
+        "Mt 16:13-19",
+        "Mt 26:69-75",
+        "Jn 21:15-19",
+        "Ac 2",
+        "Ac 10",
+        "1-2 P"
+      ],
+      "relations": [
+        {
+          "targetId": "jesus",
+          "type": "ma\u00eetre",
+          "description": "Son Seigneur qu'il suit, renie, et sert jusqu'\u00e0 la mort"
+        },
+        {
+          "targetId": "john_apostle",
+          "type": "alli\u00e9",
+          "description": "Son compagnon privil\u00e9gi\u00e9 dans les moments cl\u00e9s"
+        },
+        {
+          "targetId": "james_zebedee",
+          "type": "alli\u00e9",
+          "description": "Avec Jean, ils forment les Trois t\u00e9moins"
+        },
+        {
+          "targetId": "andrew",
+          "type": "fr\u00e8re",
+          "description": "Son fr\u00e8re qui l'am\u00e8ne \u00e0 J\u00e9sus"
+        },
+        {
+          "targetId": "paul",
+          "type": "alli\u00e9",
+          "description": "Confront\u00e9 par Paul \u00e0 Antioche, mais pilier de l'\u00c9glise ensemble"
+        }
+      ]
+    },
+    {
+      "id": "john_apostle",
+      "level": 2,
+      "era": "new_testament",
+      "name": {
+        "fr": "Jean",
+        "he": "\u05d9\u05d5\u05b9\u05d7\u05b8\u05e0\u05b8\u05df",
+        "en": "John",
+        "meaning": "YHWH est gracieux"
+      },
+      "description": "Fils de Z\u00e9b\u00e9d\u00e9e, p\u00eacheur, 'le disciple bien-aim\u00e9'. Avec Pierre et Jacques, fait partie des Trois t\u00e9moins (Transfiguration, Geths\u00e9mani). Seul ap\u00f4tre pr\u00e9sent au pied de la croix. J\u00e9sus lui confie sa m\u00e8re. Auteur traditionnel du quatri\u00e8me \u00e9vangile, de trois \u00e9p\u00eetres et de l'Apocalypse. Seul ap\u00f4tre \u00e0 mourir de vieillesse, exil\u00e9 \u00e0 Patmos.",
+      "references": [
+        "Mt 4:21",
+        "Jn 13:23",
+        "Jn 19:26-27",
+        "Ac 3-4",
+        "Jn 1-21",
+        "Ap 1-22"
+      ],
+      "relations": [
+        {
+          "targetId": "jesus",
+          "type": "ma\u00eetre",
+          "description": "Son Seigneur, l'appelle 'disciple bien-aim\u00e9'"
+        },
+        {
+          "targetId": "james_zebedee",
+          "type": "fr\u00e8re",
+          "description": "Son fr\u00e8re, fils de Z\u00e9b\u00e9d\u00e9e"
+        },
+        {
+          "targetId": "peter",
+          "type": "alli\u00e9",
+          "description": "Compagnon privil\u00e9gi\u00e9 dans les moments cl\u00e9s"
+        },
+        {
+          "targetId": "mary_mother",
+          "type": "alli\u00e9",
+          "description": "Lui est confi\u00e9e par J\u00e9sus comme m\u00e8re"
+        }
+      ]
+    },
+    {
+      "id": "james_zebedee",
+      "level": 2,
+      "era": "new_testament",
+      "name": {
+        "fr": "Jacques fils de Z\u00e9b\u00e9d\u00e9e",
+        "he": "\u05d9\u05b7\u05e2\u05b2\u05e7\u05b9\u05d1",
+        "en": "James son of Zebedee",
+        "meaning": "Supplanteur (m\u00eame que Jacob)"
+      },
+      "description": "Ap\u00f4tre, fr\u00e8re de Jean, surnomm\u00e9 avec lui 'Boanergu\u00e8s' (fils du tonnerre) par J\u00e9sus. L'un des Trois t\u00e9moins. Premier ap\u00f4tre martyris\u00e9 \u2014 d\u00e9capit\u00e9 par H\u00e9rode Agrippa vers 44 ap. J.-C. Patron de l'Espagne (Saint-Jacques-de-Compostelle).",
+      "references": [
+        "Mt 4:21",
+        "Mc 3:17",
+        "Mc 10:35-40",
+        "Ac 12:1-2"
+      ],
+      "relations": [
+        {
+          "targetId": "jesus",
+          "type": "ma\u00eetre",
+          "description": "Son Seigneur"
+        },
+        {
+          "targetId": "john_apostle",
+          "type": "fr\u00e8re",
+          "description": "Son fr\u00e8re"
+        },
+        {
+          "targetId": "peter",
+          "type": "alli\u00e9",
+          "description": "Compagnon des Trois t\u00e9moins"
+        }
+      ]
+    },
+    {
+      "id": "judas_iscariot",
+      "level": 2,
+      "era": "new_testament",
+      "name": {
+        "fr": "Judas Iscariote",
+        "he": "\u05d9\u05b0\u05d4\u05d5\u05bc\u05d3\u05b8\u05d4 \u05d0\u05b4\u05d9\u05e9\u05c1 \u05e7\u05b0\u05e8\u05b4\u05d9\u05bc\u05d5\u05b9\u05ea",
+        "en": "Judas Iscariot",
+        "meaning": "Juda : lou\u00e9 / Iscariote : homme de Qeriot (ville de Jud\u00e9e)"
+      },
+      "description": "L'un des Douze, tr\u00e9sorier du groupe. Livre J\u00e9sus aux grands-pr\u00eatres pour 30 pi\u00e8ces d'argent \u2014 accomplissant la proph\u00e9tie de Zacharie (Za 11:12-13). Se pend de remords apr\u00e8s la condamnation de J\u00e9sus. Symbole universel de la trahison, sa figure est th\u00e9ologiquement complexe : instrument du plan divin ou libre arbitre ?",
+      "references": [
+        "Mt 26:14-16",
+        "Mt 26:47-50",
+        "Mt 27:3-10",
+        "Jn 12:6",
+        "Ac 1:16-20"
+      ],
+      "relations": [
+        {
+          "targetId": "jesus",
+          "type": "ma\u00eetre",
+          "description": "Son Seigneur qu'il livre pour 30 pi\u00e8ces"
+        }
+      ]
+    },
+    {
+      "id": "mary_magdalene",
+      "level": 2,
+      "era": "new_testament",
+      "name": {
+        "fr": "Marie-Madeleine",
+        "he": "\u05de\u05b4\u05e8\u05b0\u05d9\u05b8\u05dd \u05d4\u05b7\u05de\u05b7\u05bc\u05d2\u05b0\u05d3\u05b8\u05bc\u05dc\u05b4\u05d9\u05ea",
+        "en": "Mary Magdalene",
+        "meaning": "Marie de Magdala (ville sur le lac de Tib\u00e9riade)"
+      },
+      "description": "Disciple fid\u00e8le de J\u00e9sus dont il avait chass\u00e9 sept d\u00e9mons. L'une des femmes qui financent son minist\u00e8re. Pr\u00e9sente au pied de la croix, au tombeau, et premi\u00e8re \u00e0 voir le Ressuscit\u00e9 \u2014 'ap\u00f4tre des ap\u00f4tres' selon Hippolyte de Rome. Longtemps confondue \u00e0 tort avec la p\u00e9cheresse de Lc 7 dans la tradition occidentale.",
+      "references": [
+        "Lc 8:2",
+        "Mt 27:56",
+        "Jn 19:25",
+        "Jn 20:1-18",
+        "Mc 16:9"
+      ],
+      "relations": [
+        {
+          "targetId": "jesus",
+          "type": "ma\u00eetre",
+          "description": "Son Seigneur qu'elle suit et est premi\u00e8re \u00e0 voir ressuscit\u00e9"
+        }
+      ]
+    },
+    {
+      "id": "ishmael",
+      "level": 3,
+      "era": "patriarchs",
+      "name": {
+        "fr": "Isma\u00ebl",
+        "he": "\u05d9\u05b4\u05e9\u05b0\u05c1\u05de\u05b8\u05e2\u05b5\u05d0\u05dc",
+        "en": "Ishmael",
+        "meaning": "Dieu entend"
+      },
+      "description": "Fils a\u00een\u00e9 d'Abraham et d'Agar, anc\u00eatre des peuples arabes selon la tradition. Chass\u00e9 dans le d\u00e9sert avec sa m\u00e8re, survit par une intervention divine. Dans l'islam, c'est lui \u2014 et non Isaac \u2014 qui est l'enfant du sacrifice.",
+      "references": [
+        "Gn 16",
+        "Gn 21",
+        "Gn 25:12-18",
+        "Ga 4:22-25"
+      ],
+      "relations": [
+        {
+          "targetId": "abraham",
+          "type": "p\u00e8re",
+          "description": "Son p\u00e8re, patriarche"
+        },
+        {
+          "targetId": "hagar",
+          "type": "m\u00e8re",
+          "description": "Sa m\u00e8re \u00e9gyptienne"
+        },
+        {
+          "targetId": "isaac",
+          "type": "demi-fr\u00e8re",
+          "description": "Son demi-fr\u00e8re, fils de Sara"
+        }
+      ]
+    },
+    {
+      "id": "lot",
+      "level": 3,
+      "era": "patriarchs",
+      "name": {
+        "fr": "Lot",
+        "he": "\u05dc\u05d5\u05b9\u05d8",
+        "en": "Lot",
+        "meaning": "Voile, couverture"
+      },
+      "description": "Neveu d'Abraham, l'accompagne de Ur \u00e0 Canaan. Choisit les plaines du Jourdain, s'installe \u00e0 Sodome. Sauv\u00e9 de la destruction de Sodome par deux anges. Sa femme se retourne et devient une colonne de sel. Ses filles le sao\u00fblent pour perp\u00e9tuer sa descendance \u2014 anc\u00eatres des Moabites et des Ammonites.",
+      "references": [
+        "Gn 11:27",
+        "Gn 13-14",
+        "Gn 19",
+        "2 P 2:7-8"
+      ],
+      "relations": [
+        {
+          "targetId": "abraham",
+          "type": "oncle",
+          "description": "Son oncle qui l'emm\u00e8ne de Ur \u00e0 Canaan"
+        }
+      ]
+    },
+    {
+      "id": "esau",
+      "level": 3,
+      "era": "patriarchs",
+      "name": {
+        "fr": "\u00c9sa\u00fc",
+        "he": "\u05e2\u05b5\u05e9\u05b8\u05c2\u05d5",
+        "en": "Esau",
+        "meaning": "Velu, poilu"
+      },
+      "description": "Fils a\u00een\u00e9 d'Isaac, jumeau de Jacob. Chasseur, homme des champs. Vend son droit d'a\u00eenesse pour un plat de lentilles. Se r\u00e9concilie finalement avec Jacob apr\u00e8s des ann\u00e9es de s\u00e9paration. Anc\u00eatre des \u00c9domites.",
+      "references": [
+        "Gn 25:25-34",
+        "Gn 27",
+        "Gn 32-33",
+        "Ml 1:2-3",
+        "Rm 9:13"
+      ],
+      "relations": [
+        {
+          "targetId": "jacob",
+          "type": "fr\u00e8re",
+          "description": "Son fr\u00e8re jumeau cadet qui lui vole b\u00e9n\u00e9diction et droit d'a\u00eenesse"
+        },
+        {
+          "targetId": "isaac",
+          "type": "p\u00e8re",
+          "description": "Son p\u00e8re"
+        },
+        {
+          "targetId": "rebekah",
+          "type": "m\u00e8re",
+          "description": "Sa m\u00e8re qui pr\u00e9f\u00e8re Jacob"
+        }
+      ]
+    },
+    {
+      "id": "rahab",
+      "level": 3,
+      "era": "exodus",
+      "name": {
+        "fr": "Rahab",
+        "he": "\u05e8\u05b8\u05d7\u05b8\u05d1",
+        "en": "Rahab",
+        "meaning": "Large, vaste"
+      },
+      "description": "Prostitu\u00e9e de J\u00e9richo qui cache les espions de Josu\u00e9 et obtient en \u00e9change la promesse d'\u00eatre \u00e9pargn\u00e9e (signe : un fil rouge \u00e0 la fen\u00eatre). Seule \u00e9trang\u00e8re mentionn\u00e9e dans la g\u00e9n\u00e9alogie de J\u00e9sus (Mt 1:5). Cit\u00e9e en He 11 comme exemple de foi. Anc\u00eatre de David et de J\u00e9sus.",
+      "references": [
+        "Jos 2",
+        "Jos 6:17-25",
+        "Mt 1:5",
+        "He 11:31",
+        "Jc 2:25"
+      ],
+      "relations": [
+        {
+          "targetId": "joshua",
+          "type": "alli\u00e9",
+          "description": "Cache ses espions et re\u00e7oit protection en \u00e9change"
+        },
+        {
+          "targetId": "jesus",
+          "type": "anc\u00eatre",
+          "description": "Dans la g\u00e9n\u00e9alogie de J\u00e9sus selon Matthieu"
+        }
+      ]
+    },
+    {
+      "id": "ruth",
+      "level": 3,
+      "era": "judges_kings",
+      "name": {
+        "fr": "Ruth",
+        "he": "\u05e8\u05d5\u05bc\u05ea",
+        "en": "Ruth",
+        "meaning": "Amie, compagne"
+      },
+      "description": "Moabite veuve qui choisit de suivre sa belle-m\u00e8re Naomi \u00e0 Bethl\u00e9em : 'L\u00e0 o\u00f9 tu iras, j'irai' (Rt 1:16). \u00c9pouse Boaz, le racheteur, et devient arri\u00e8re-grand-m\u00e8re de David. Son livre c\u00e9l\u00e8bre la fid\u00e9lit\u00e9 (hesed) par-del\u00e0 les fronti\u00e8res ethniques et religieuses. Dans la g\u00e9n\u00e9alogie de J\u00e9sus.",
+      "references": [
+        "Rt 1-4",
+        "Mt 1:5"
+      ],
+      "relations": [
+        {
+          "targetId": "naomi",
+          "type": "belle-m\u00e8re",
+          "description": "Sa belle-m\u00e8re qu'elle refuse d'abandonner"
+        },
+        {
+          "targetId": "boaz",
+          "type": "\u00e9poux",
+          "description": "Le racheteur qu'elle \u00e9pouse \u00e0 Bethl\u00e9em"
+        },
+        {
+          "targetId": "david",
+          "type": "anc\u00eatre",
+          "description": "David est son arri\u00e8re-petit-fils"
+        }
+      ]
+    },
+    {
+      "id": "jonathan",
+      "level": 3,
+      "era": "judges_kings",
+      "name": {
+        "fr": "Jonathan",
+        "he": "\u05d9\u05b0\u05d4\u05d5\u05b9\u05e0\u05b8\u05ea\u05b8\u05df",
+        "en": "Jonathan",
+        "meaning": "YHWH a donn\u00e9"
+      },
+      "description": "Fils du roi Sa\u00fcl, ami intime de David \u2014 'son \u00e2me \u00e9tait li\u00e9e \u00e0 l'\u00e2me de David' (1 S 18:1). Mod\u00e8le d'amiti\u00e9 sacrificielle : d\u00e9fend David contre son propre p\u00e8re, renonce au tr\u00f4ne pour lui. Meurt au combat \u00e0 Guilboa avec Sa\u00fcl.",
+      "references": [
+        "1 S 14",
+        "1 S 18-20",
+        "1 S 23:16-18",
+        "2 S 1:26"
+      ],
+      "relations": [
+        {
+          "targetId": "saul",
+          "type": "p\u00e8re",
+          "description": "Son p\u00e8re le roi"
+        },
+        {
+          "targetId": "david",
+          "type": "ami",
+          "description": "Son ami bien-aim\u00e9 qu'il soutient contre son p\u00e8re"
+        }
+      ]
+    },
+    {
+      "id": "bathsheba",
+      "level": 3,
+      "era": "judges_kings",
+      "name": {
+        "fr": "Bethsab\u00e9e",
+        "he": "\u05d1\u05b7\u05bc\u05ea \u05e9\u05b6\u05c1\u05d1\u05b7\u05e2",
+        "en": "Bathsheba",
+        "meaning": "Fille du serment"
+      },
+      "description": "\u00c9pouse d'Urie le Hittite, convoit\u00e9e par David qui la prend et fait tuer son mari. Perd leur premier enfant (punition proph\u00e9tique), puis donne naissance \u00e0 Salomon. Man\u0153uvre habilement pour que Salomon monte sur le tr\u00f4ne plut\u00f4t qu'Adonija.",
+      "references": [
+        "2 S 11-12",
+        "1 R 1-2",
+        "Mt 1:6"
+      ],
+      "relations": [
+        {
+          "targetId": "david",
+          "type": "\u00e9poux",
+          "description": "Roi qui la convoite et prend apr\u00e8s avoir fait tuer son mari"
+        },
+        {
+          "targetId": "solomon",
+          "type": "fils",
+          "description": "Son fils roi qu'elle positionne sur le tr\u00f4ne"
+        },
+        {
+          "targetId": "uriah",
+          "type": "\u00e9poux",
+          "description": "Son premier mari, soldat hittite fid\u00e8le tu\u00e9 sur ordre de David"
+        }
+      ]
+    },
+    {
+      "id": "absalom",
+      "level": 3,
+      "era": "judges_kings",
+      "name": {
+        "fr": "Absalom",
+        "he": "\u05d0\u05b7\u05d1\u05b0\u05e9\u05b8\u05c1\u05dc\u05d5\u05b9\u05dd",
+        "en": "Absalom",
+        "meaning": "Mon p\u00e8re est paix"
+      },
+      "description": "Troisi\u00e8me fils de David, r\u00e9put\u00e9 pour sa beaut\u00e9 et ses longs cheveux. Venge le viol de sa s\u0153ur Tamar en tuant Amnon. Se rebelle contre David, prend J\u00e9rusalem temporairement. Tu\u00e9 par Joab alors que ses cheveux sont pris dans les branches d'un ch\u00eane. La lamentation de David : 'Mon fils Absalom !' est un des moments les plus poignants de l'AT.",
+      "references": [
+        "2 S 13-18"
+      ],
+      "relations": [
+        {
+          "targetId": "david",
+          "type": "p\u00e8re",
+          "description": "Son p\u00e8re qu'il trahit et chasse"
+        },
+        {
+          "targetId": "amnon",
+          "type": "fr\u00e8re",
+          "description": "Son demi-fr\u00e8re qu'il tue en vengeance"
+        },
+        {
+          "targetId": "tamar_david",
+          "type": "s\u0153ur",
+          "description": "Sa s\u0153ur viol\u00e9e par Amnon"
+        }
+      ]
+    },
+    {
+      "id": "job",
+      "level": 3,
+      "era": "prophets_exile",
+      "name": {
+        "fr": "Job",
+        "he": "\u05d0\u05b4\u05d9\u05bc\u05d5\u05b9\u05d1",
+        "en": "Job",
+        "meaning": "Pers\u00e9cut\u00e9, ou : O\u00f9 est mon p\u00e8re ?"
+      },
+      "description": "Homme juste \u00e9prouv\u00e9 par Satan avec la permission de Dieu. Perd ses enfants, ses biens, sa sant\u00e9. Dialogue avec trois amis theologiens aux r\u00e9ponses insuffisantes. Dieu lui r\u00e9pond depuis le tourbillon \u2014 non par des explications, mais par la r\u00e9v\u00e9lation de sa grandeur. Paradigme de la souffrance innocente et du questionnement de Dieu.",
+      "references": [
+        "Jb 1-42",
+        "Ez 14:14",
+        "Jc 5:11"
+      ],
+      "relations": [
+        {
+          "targetId": "eliphaz",
+          "type": "ami",
+          "description": "Son ami de T\u00e9m\u00e2n dont les r\u00e9ponses th\u00e9ologiques sont rejet\u00e9es par Dieu"
+        },
+        {
+          "targetId": "bildad",
+          "type": "ami",
+          "description": "Son ami de Schuach"
+        },
+        {
+          "targetId": "zophar",
+          "type": "ami",
+          "description": "Son ami de Naama"
+        },
+        {
+          "targetId": "elihu",
+          "type": "ami",
+          "description": "Le plus jeune de ses interlocuteurs, souvent per\u00e7u comme le plus juste"
+        }
+      ]
+    },
+    {
+      "id": "esther",
+      "level": 3,
+      "era": "prophets_exile",
+      "name": {
+        "fr": "Esther",
+        "he": "\u05d0\u05b6\u05e1\u05b0\u05ea\u05b5\u05bc\u05e8",
+        "en": "Esther",
+        "meaning": "\u00c9toile (perse) ou cach\u00e9e (h\u00e9breu Hadassa : myrte)"
+      },
+      "description": "Juive de la diaspora, orpheline \u00e9lev\u00e9e par son cousin Mardoch\u00e9e, devenue reine de Perse par le choix du roi Assu\u00e9rus. Risque sa vie en se pr\u00e9sentant non convoqu\u00e9e au roi pour interc\u00e9der en faveur de son peuple menac\u00e9 de g\u00e9nocide par Haman. 'Si je dois p\u00e9rir, je p\u00e9rirai' (Et 4:16). Son courage sauve les Juifs de l'empire perse.",
+      "references": [
+        "Et 1-10"
+      ],
+      "relations": [
+        {
+          "targetId": "mordecai",
+          "type": "cousin",
+          "description": "Son cousin qui l'\u00e9l\u00e8ve comme sa fille"
+        },
+        {
+          "targetId": "ahasuerus",
+          "type": "\u00e9poux",
+          "description": "Roi de Perse Assu\u00e9rus qui la choisit comme reine"
+        },
+        {
+          "targetId": "haman",
+          "type": "ennemi",
+          "description": "Ministre persan qui veut exterminer les Juifs"
+        }
+      ]
+    },
+    {
+      "id": "jeremiah",
+      "level": 3,
+      "era": "prophets_exile",
+      "name": {
+        "fr": "J\u00e9r\u00e9mie",
+        "he": "\u05d9\u05b4\u05e8\u05b0\u05de\u05b0\u05d9\u05b8\u05d4\u05d5\u05bc",
+        "en": "Jeremiah",
+        "meaning": "YHWH \u00e9l\u00e8ve ou YHWH lance"
+      },
+      "description": "Proph\u00e8te des derniers jours de J\u00e9rusalem avant la d\u00e9portation babylonienne, surnomm\u00e9 'le proph\u00e8te pleureur'. Annonce la destruction du Temple \u2014 ce qui lui vaut pers\u00e9cution, emprisonnement et tentatives de meurtre. Pr\u00e9dit la Nouvelle Alliance inscrite dans les c\u0153urs (Jr 31:31-34), cit\u00e9e en He 8 comme accomplie en Christ.",
+      "references": [
+        "Jr 1-52",
+        "Lm",
+        "He 8:8-12"
+      ],
+      "relations": [
+        {
+          "targetId": "baruch",
+          "type": "disciple",
+          "description": "Son secr\u00e9taire qui transcrit ses oracles"
+        },
+        {
+          "targetId": "ezekiel",
+          "type": "alli\u00e9",
+          "description": "Contemporain proph\u00e9tisant en exil \u00e0 Babylone"
+        }
+      ]
+    },
+    {
+      "id": "lazarus",
+      "level": 3,
+      "era": "new_testament",
+      "name": {
+        "fr": "Lazare",
+        "he": "\u05dc\u05b8\u05d6\u05b8\u05e8",
+        "en": "Lazarus",
+        "meaning": "Dieu a secouru (\u00c9l\u00e9azar)"
+      },
+      "description": "Ami bien-aim\u00e9 de J\u00e9sus, fr\u00e8re de Marie et Marthe, \u00e0 B\u00e9thanie. Meurt de maladie. J\u00e9sus, arriv\u00e9 4 jours apr\u00e8s sa mort, pleure et le ressuscite \u2014 le plus grand miracle des \u00e9vangiles avant la r\u00e9surrection de J\u00e9sus lui-m\u00eame. Cet \u00e9v\u00e9nement pr\u00e9cipite la d\u00e9cision du Sanh\u00e9drin de tuer J\u00e9sus.",
+      "references": [
+        "Jn 11",
+        "Jn 12:1-11"
+      ],
+      "relations": [
+        {
+          "targetId": "jesus",
+          "type": "ma\u00eetre",
+          "description": "J\u00e9sus le ressuscite apr\u00e8s 4 jours"
+        },
+        {
+          "targetId": "martha",
+          "type": "s\u0153ur",
+          "description": "Sa s\u0153ur active qui interpelle J\u00e9sus"
+        },
+        {
+          "targetId": "mary_bethany",
+          "type": "s\u0153ur",
+          "description": "Sa s\u0153ur contemplative qui oint les pieds de J\u00e9sus"
+        }
+      ]
+    },
+    {
+      "id": "nicodemus",
+      "level": 3,
+      "era": "new_testament",
+      "name": {
+        "fr": "Nicod\u00e8me",
+        "he": "\u05e0\u05b4\u05d9\u05e7\u05d5\u05b9\u05d3\u05b5\u05de\u05d5\u05b9\u05df",
+        "en": "Nicodemus",
+        "meaning": "Vainqueur du peuple (grec)"
+      },
+      "description": "Pharisien et chef des Juifs qui vient trouver J\u00e9sus de nuit. Re\u00e7oit l'enseignement sur la nouvelle naissance (Jn 3:1-21 \u2014 'Il faut que vous naissiez de nouveau'). Prend la d\u00e9fense de J\u00e9sus au Sanh\u00e9drin. Apporte les aromates pour sa s\u00e9pulture.",
+      "references": [
+        "Jn 3:1-21",
+        "Jn 7:50-52",
+        "Jn 19:39"
+      ],
+      "relations": [
+        {
+          "targetId": "jesus",
+          "type": "ma\u00eetre",
+          "description": "Le visite de nuit et re\u00e7oit l'enseignement sur la nouvelle naissance"
+        }
+      ]
+    },
+    {
+      "id": "barnabas",
+      "level": 3,
+      "era": "new_testament",
+      "name": {
+        "fr": "Barnabas",
+        "he": "\u05d1\u05b7\u05bc\u05e8 \u05e0\u05b7\u05d1\u05b0\u05d9\u05b8\u05d0",
+        "en": "Barnabas",
+        "meaning": "Fils de consolation/d'encouragement"
+      },
+      "description": "L\u00e9vite chypriote, figure de la g\u00e9n\u00e9rosit\u00e9 et de l'encouragement dans l'\u00c9glise primitive. Premier \u00e0 accueillir Paul converti \u00e0 J\u00e9rusalem quand tous le craignaient. Compagnon de Paul lors du premier voyage missionnaire. Se s\u00e9pare de Paul sur la question de Marc.",
+      "references": [
+        "Ac 4:36-37",
+        "Ac 9:27",
+        "Ac 13-15",
+        "Ga 2:9"
+      ],
+      "relations": [
+        {
+          "targetId": "paul",
+          "type": "alli\u00e9",
+          "description": "Compagnon de mission et d\u00e9fenseur aupr\u00e8s des ap\u00f4tres"
+        },
+        {
+          "targetId": "mark_evangelist",
+          "type": "cousin",
+          "description": "Son cousin, auteur de l'\u00e9vangile de Marc"
+        }
+      ]
+    },
+    {
+      "id": "timothy",
+      "level": 3,
+      "era": "new_testament",
+      "name": {
+        "fr": "Timoth\u00e9e",
+        "he": "\u05d8\u05b4\u05d9\u05de\u05d5\u05b9\u05ea\u05b5\u05d5\u05bc\u05e1",
+        "en": "Timothy",
+        "meaning": "Honorant Dieu (grec)"
+      },
+      "description": "Jeune collaborateur de Paul, fils d'une m\u00e8re juive croyante et d'un p\u00e8re grec. Paul l'appelle 'mon enfant bien-aim\u00e9 et fid\u00e8le dans le Seigneur'. Destinataire de deux \u00e9p\u00eetres pastorales. Repr\u00e9sente Paul dans diverses \u00c9glises. Selon la tradition, premier \u00e9v\u00eaque d'\u00c9ph\u00e8se.",
+      "references": [
+        "Ac 16:1-3",
+        "1 Co 4:17",
+        "1-2 Tm",
+        "He 13:23"
+      ],
+      "relations": [
+        {
+          "targetId": "paul",
+          "type": "ma\u00eetre",
+          "description": "Son p\u00e8re spirituel et mentor"
+        },
+        {
+          "targetId": "lois",
+          "type": "grand-m\u00e8re",
+          "description": "Sa grand-m\u00e8re croyante"
+        },
+        {
+          "targetId": "eunice",
+          "type": "m\u00e8re",
+          "description": "Sa m\u00e8re juive croyante"
+        }
+      ]
+    },
+    {
+      "id": "andrew",
+      "level": 3,
+      "era": "new_testament",
+      "name": {
+        "fr": "Andr\u00e9",
+        "he": "\u05d0\u05b7\u05e0\u05b0\u05d3\u05b0\u05e8\u05b5\u05d0\u05d5\u05bc\u05e1",
+        "en": "Andrew",
+        "meaning": "Viril, courageux (grec)"
+      },
+      "description": "Fr\u00e8re de Pierre, disciple de Jean-Baptiste avant de suivre J\u00e9sus. Premier appel\u00e9 selon Jean ('Protocl\u00e8te'). Am\u00e8ne son fr\u00e8re Pierre \u00e0 J\u00e9sus. Martyr sur une croix en X (croix de Saint-Andr\u00e9).",
+      "references": [
+        "Mt 4:18-20",
+        "Jn 1:35-42",
+        "Jn 6:8-9",
+        "Jn 12:22"
+      ],
+      "relations": [
+        {
+          "targetId": "peter",
+          "type": "fr\u00e8re",
+          "description": "Son fr\u00e8re Simon-Pierre qu'il am\u00e8ne \u00e0 J\u00e9sus"
+        },
+        {
+          "targetId": "jesus",
+          "type": "ma\u00eetre",
+          "description": "Son Seigneur, premier \u00e0 le suivre"
+        },
+        {
+          "targetId": "john_baptist",
+          "type": "ma\u00eetre",
+          "description": "Disciple de Jean-Baptiste avant J\u00e9sus"
+        }
+      ]
+    },
+    {
+      "id": "philip_apostle",
+      "level": 3,
+      "era": "new_testament",
+      "name": {
+        "fr": "Philippe (ap\u00f4tre)",
+        "he": "\u05e4\u05b4\u05d9\u05dc\u05b4\u05d9\u05e4\u05bc\u05d5\u05bc\u05e1",
+        "en": "Philip the Apostle",
+        "meaning": "Ami des chevaux (grec)"
+      },
+      "description": "Ap\u00f4tre de Bethsa\u00efde, m\u00eame ville que Pierre et Andr\u00e9. J\u00e9sus l'appelle directement. Am\u00e8ne Nathana\u00ebl. Demande \u00e0 J\u00e9sus de montrer le P\u00e8re \u2014 re\u00e7oit la r\u00e9ponse : 'Qui m'a vu a vu le P\u00e8re' (Jn 14:9).",
+      "references": [
+        "Jn 1:43-48",
+        "Jn 6:5-7",
+        "Jn 12:21-22",
+        "Jn 14:8-9"
+      ],
+      "relations": [
+        {
+          "targetId": "jesus",
+          "type": "ma\u00eetre",
+          "description": "Son Seigneur qui l'appelle directement"
+        },
+        {
+          "targetId": "nathanael",
+          "type": "ami",
+          "description": "L'ami qu'il am\u00e8ne \u00e0 J\u00e9sus"
+        }
+      ]
+    },
+    {
+      "id": "thomas_apostle",
+      "level": 3,
+      "era": "new_testament",
+      "name": {
+        "fr": "Thomas",
+        "he": "\u05ea\u05bc\u05d5\u05b9\u05de\u05b8\u05d0",
+        "en": "Thomas",
+        "meaning": "Jumeau (aram\u00e9en)"
+      },
+      "description": "Ap\u00f4tre connu pour son doute puis sa confession de foi 'Mon Seigneur et mon Dieu' (Jn 20:28) apr\u00e8s avoir touch\u00e9 les plaies de J\u00e9sus ressuscit\u00e9. Selon la tradition, \u00e9vang\u00e9lise l'Inde. Patron de l'Inde chr\u00e9tienne.",
+      "references": [
+        "Jn 11:16",
+        "Jn 14:5",
+        "Jn 20:24-28"
+      ],
+      "relations": [
+        {
+          "targetId": "jesus",
+          "type": "ma\u00eetre",
+          "description": "Son Seigneur qu'il doute puis confesse 'Mon Seigneur et mon Dieu'"
+        }
+      ]
+    },
+    {
+      "id": "matthew_apostle",
+      "level": 3,
+      "era": "new_testament",
+      "name": {
+        "fr": "Matthieu",
+        "he": "\u05de\u05b7\u05ea\u05b4\u05bc\u05ea\u05b0\u05d9\u05b8\u05d4\u05d5\u05bc",
+        "en": "Matthew",
+        "meaning": "Don de YHWH"
+      },
+      "description": "Percepteur d'imp\u00f4ts (publicain) \u00e0 Capharna\u00fcm, m\u00e9pris\u00e9 de ses compatriotes pour sa collaboration avec Rome. Appel\u00e9 directement par J\u00e9sus : 'Suis-moi' (Mt 9:9). Organise un grand festin pour J\u00e9sus qui scandalise les pharisiens. Auteur traditionnel du premier \u00e9vangile.",
+      "references": [
+        "Mt 9:9-13",
+        "Mc 2:13-17",
+        "Lc 5:27-32"
+      ],
+      "relations": [
+        {
+          "targetId": "jesus",
+          "type": "ma\u00eetre",
+          "description": "Son Seigneur qui l'appelle alors qu'il per\u00e7oit les imp\u00f4ts"
+        }
+      ]
+    },
+    {
+      "id": "stephen",
+      "level": 3,
+      "era": "new_testament",
+      "name": {
+        "fr": "\u00c9tienne",
+        "he": "\u05e1\u05b0\u05d8\u05b6\u05e4\u05b8\u05e0\u05d5\u05b9\u05e1",
+        "en": "Stephen",
+        "meaning": "Couronne (grec)"
+      },
+      "description": "Premier diacre de l'\u00c9glise, 'plein de gr\u00e2ce et de puissance'. Premier martyr chr\u00e9tien, lapid\u00e9 apr\u00e8s un discours r\u00e9capitulant l'histoire du salut. En mourant, voit 'le Fils de l'homme debout \u00e0 la droite de Dieu' et dit 'Seigneur, ne leur impute pas ce p\u00e9ch\u00e9'. Saul (Paul) assiste \u00e0 son martyre.",
+      "references": [
+        "Ac 6:1-15",
+        "Ac 7",
+        "Ac 8:1-2"
+      ],
+      "relations": [
+        {
+          "targetId": "paul",
+          "type": "ennemi",
+          "description": "Saul garde les manteaux et approuve sa lapidation"
+        },
+        {
+          "targetId": "jesus",
+          "type": "ma\u00eetre",
+          "description": "Voit J\u00e9sus ressuscit\u00e9 au moment de sa mort"
+        }
+      ]
+    },
+    {
+      "id": "luke",
+      "level": 3,
+      "era": "new_testament",
+      "name": {
+        "fr": "Luc",
+        "he": "\u05dc\u05d5\u05bc\u05e7\u05b8\u05d0\u05e1",
+        "en": "Luke",
+        "meaning": "De Lucanie / lumi\u00e8re (latin)"
+      },
+      "description": "M\u00e9decin grec, compagnon fid\u00e8le de Paul ('le m\u00e9decin bien-aim\u00e9', Col 4:14). Auteur du troisi\u00e8me \u00e9vangile et des Actes des Ap\u00f4tres \u2014 soit 28% du NT. Seul auteur non-juif du NT. Narrateur pr\u00e9cis et sensible, met en valeur les femmes, les pauvres, la pri\u00e8re et le Saint-Esprit.",
+      "references": [
+        "Col 4:14",
+        "2 Tm 4:11",
+        "Phm 1:24",
+        "Lc 1-24",
+        "Ac 1-28"
+      ],
+      "relations": [
+        {
+          "targetId": "paul",
+          "type": "alli\u00e9",
+          "description": "Compagnon fid\u00e8le de Paul, notamment dans son emprisonnement"
+        }
+      ]
+    },
+    {
+      "id": "mark_evangelist",
+      "level": 3,
+      "era": "new_testament",
+      "name": {
+        "fr": "Marc",
+        "he": "\u05de\u05b7\u05e8\u05b0\u05e7\u05d5\u05bc\u05e1",
+        "en": "Mark",
+        "meaning": "Du dieu Mars (latin) / Marteau"
+      },
+      "description": "Auteur du second \u00e9vangile, le plus ancien et le plus direct. Cousin de Barnabas. Compagnon de Pierre dont il transcrit les pr\u00e9dications selon la tradition de Papias. Abandonne Paul et Barnabas lors du premier voyage \u2014 source de la s\u00e9paration entre eux. R\u00e9concili\u00e9 avec Paul.",
+      "references": [
+        "Ac 12:12-25",
+        "Ac 13:13",
+        "Ac 15:36-39",
+        "Col 4:10",
+        "2 Tm 4:11",
+        "1 P 5:13"
+      ],
+      "relations": [
+        {
+          "targetId": "barnabas",
+          "type": "cousin",
+          "description": "Son cousin qui le d\u00e9fend face \u00e0 Paul"
+        },
+        {
+          "targetId": "peter",
+          "type": "mentor",
+          "description": "Pierre dont il transcrit les pr\u00e9dications selon la tradition"
+        },
+        {
+          "targetId": "paul",
+          "type": "alli\u00e9",
+          "description": "L'abandonne puis se r\u00e9concilie, 'utile pour le minist\u00e8re'"
+        }
+      ]
+    },
+    {
+      "id": "melchizedek",
+      "level": 4,
+      "era": "patriarchs",
+      "name": {
+        "fr": "Melchis\u00e9dek",
+        "he": "\u05de\u05b7\u05dc\u05b0\u05db\u05b4\u05bc\u05d9 \u05e6\u05b6\u05d3\u05b6\u05e7",
+        "en": "Melchizedek",
+        "meaning": "Roi de justice"
+      },
+      "description": "Roi de Salem et pr\u00eatre du Dieu Tr\u00e8s-Haut, sans g\u00e9n\u00e9alogie connue. B\u00e9nit Abraham et re\u00e7oit la d\u00eeme. Figure myst\u00e9rieuse pr\u00e9figurant Christ dans He 7.",
+      "references": [
+        "Gn 14:18-20",
+        "Ps 110:4",
+        "He 5-7"
+      ],
+      "relations": [
+        {
+          "targetId": "abraham",
+          "type": "pr\u00eatre",
+          "description": "B\u00e9nit Abraham et re\u00e7oit sa d\u00eeme"
+        }
+      ]
+    },
+    {
+      "id": "naomi",
+      "level": 4,
+      "era": "judges_kings",
+      "name": {
+        "fr": "Naomi",
+        "he": "\u05e0\u05b8\u05e2\u05b3\u05de\u05b4\u05d9",
+        "en": "Naomi",
+        "meaning": "Douce, agr\u00e9able \u2014 se rebaptise Mara : am\u00e8re"
+      },
+      "description": "Belle-m\u00e8re de Ruth, veuve revenue de Moab \u00e0 Bethl\u00e9em. Guide Ruth vers Boaz le racheteur.",
+      "references": [
+        "Rt 1-4"
+      ],
+      "relations": [
+        {
+          "targetId": "ruth",
+          "type": "belle-fille",
+          "description": "Sa belle-fille moabite qui refuse de la quitter"
+        },
+        {
+          "targetId": "boaz",
+          "type": "alli\u00e9",
+          "description": "Parent proche qui rach\u00e8te Ruth"
+        }
+      ]
+    },
+    {
+      "id": "boaz",
+      "level": 4,
+      "era": "judges_kings",
+      "name": {
+        "fr": "Boaz",
+        "he": "\u05d1\u05b9\u05bc\u05e2\u05b7\u05d6",
+        "en": "Boaz",
+        "meaning": "En lui est la force"
+      },
+      "description": "Riche propri\u00e9taire bethl\u00e9h\u00e9mite, parent d'\u00c9lim\u00e9lec. Exerce le droit du racheteur (goel) en \u00e9pousant Ruth. Anc\u00eatre de David et de J\u00e9sus.",
+      "references": [
+        "Rt 2-4",
+        "Mt 1:5"
+      ],
+      "relations": [
+        {
+          "targetId": "ruth",
+          "type": "\u00e9pouse",
+          "description": "L'\u00e9pouse comme racheteur selon la loi du l\u00e9virat"
+        },
+        {
+          "targetId": "naomi",
+          "type": "alli\u00e9",
+          "description": "Parent de son d\u00e9funt mari"
+        }
+      ]
+    },
+    {
+      "id": "gideon",
+      "level": 4,
+      "era": "judges_kings",
+      "name": {
+        "fr": "G\u00e9d\u00e9on",
+        "he": "\u05d2\u05b4\u05bc\u05d3\u05b0\u05e2\u05d5\u05b9\u05df",
+        "en": "Gideon",
+        "meaning": "Grand guerrier, celui qui abat"
+      },
+      "description": "Juge d'Isra\u00ebl qui d\u00e9fait les Madianites avec seulement 300 hommes arm\u00e9s de torches et de trompettes \u2014 strat\u00e9gie divine contre la logique militaire. Teste Dieu avec une toison (la 'toison de G\u00e9d\u00e9on').",
+      "references": [
+        "Jg 6-8",
+        "He 11:32"
+      ],
+      "relations": []
+    },
+    {
+      "id": "jephthah",
+      "level": 4,
+      "era": "judges_kings",
+      "name": {
+        "fr": "Jepht\u00e9",
+        "he": "\u05d9\u05b4\u05e4\u05b0\u05ea\u05b8\u05bc\u05d7",
+        "en": "Jephthah",
+        "meaning": "Il ouvre, il lib\u00e8re"
+      },
+      "description": "Juge fils de prostitu\u00e9e, rejet\u00e9 puis rappel\u00e9 pour d\u00e9fendre Isra\u00ebl contre les Ammonites. Son v\u0153u imprudent entra\u00eene le sacrifice (ou le c\u00e9libat perp\u00e9tuel) de sa propre fille.",
+      "references": [
+        "Jg 11-12",
+        "He 11:32"
+      ],
+      "relations": []
+    },
+    {
+      "id": "delilah",
+      "level": 4,
+      "era": "judges_kings",
+      "name": {
+        "fr": "Dalila",
+        "he": "\u05d3\u05b0\u05bc\u05dc\u05b4\u05d9\u05dc\u05b8\u05d4",
+        "en": "Delilah",
+        "meaning": "Faible, d\u00e9licate, ou nuit"
+      },
+      "description": "Femme philistine aim\u00e9e de Samson, soudoy\u00e9e par les chefs philistins pour d\u00e9couvrir le secret de sa force. Sa persistance am\u00e8ne Samson \u00e0 r\u00e9v\u00e9ler le secret de ses cheveux.",
+      "references": [
+        "Jg 16:4-22"
+      ],
+      "relations": [
+        {
+          "targetId": "samson",
+          "type": "\u00e9pouse",
+          "description": "L'\u00e9pouse ou compagne qui le livre aux Philistins"
+        }
+      ]
+    },
+    {
+      "id": "nathan",
+      "level": 4,
+      "era": "judges_kings",
+      "name": {
+        "fr": "Nathan",
+        "he": "\u05e0\u05b8\u05ea\u05b8\u05df",
+        "en": "Nathan",
+        "meaning": "Il a donn\u00e9"
+      },
+      "description": "Proph\u00e8te \u00e0 la cour de David. Annonce l'alliance davidique (2 S 7). Reprend David apr\u00e8s Bethsab\u00e9e avec la parabole de la brebis. Soutient Salomon pour la succession.",
+      "references": [
+        "2 S 7",
+        "2 S 12:1-15",
+        "1 R 1:11-45"
+      ],
+      "relations": [
+        {
+          "targetId": "david",
+          "type": "proph\u00e8te",
+          "description": "Proph\u00e8te royal qui l'interpelle et le reprend"
+        },
+        {
+          "targetId": "solomon",
+          "type": "alli\u00e9",
+          "description": "Soutient sa succession au tr\u00f4ne"
+        }
+      ]
+    },
+    {
+      "id": "goliath",
+      "level": 4,
+      "era": "judges_kings",
+      "name": {
+        "fr": "Goliath",
+        "he": "\u05d2\u05b8\u05bc\u05dc\u05b0\u05d9\u05b8\u05ea",
+        "en": "Goliath",
+        "meaning": "Incertain : exil, ou glorieux"
+      },
+      "description": "G\u00e9ant philistin de Gat, environ 3 m\u00e8tres de haut selon le texte massor\u00e9tique (6 coud\u00e9es et un palme). D\u00e9fie l'arm\u00e9e d'Isra\u00ebl 40 jours. Tu\u00e9 par David d'une fronde et d'une pierre.",
+      "references": [
+        "1 S 17"
+      ],
+      "relations": [
+        {
+          "targetId": "david",
+          "type": "ennemi",
+          "description": "Terrasse par le jeune David d'un coup de fronde"
+        }
+      ]
+    },
+    {
+      "id": "jezebel",
+      "level": 4,
+      "era": "prophets_exile",
+      "name": {
+        "fr": "J\u00e9zabel",
+        "he": "\u05d0\u05b4\u05d9\u05d6\u05b6\u05d1\u05b6\u05dc",
+        "en": "Jezebel",
+        "meaning": "O\u00f9 est le prince (Baal) ? / Non-exalt\u00e9e"
+      },
+      "description": "Princesse ph\u00e9nicienne de Sidon, \u00e9pouse du roi Achab. Importe le culte de Baal en Isra\u00ebl, pers\u00e9cute les proph\u00e8tes de YHWH, fait tuer Naboth pour voler sa vigne. Symbole biblique de la reine impie. Pr\u00e9cipit\u00e9e d'une fen\u00eatre sur ordre de J\u00e9hu, mang\u00e9e par les chiens.",
+      "references": [
+        "1 R 16:31",
+        "1 R 18:4",
+        "1 R 21",
+        "2 R 9:30-37",
+        "Ap 2:20"
+      ],
+      "relations": [
+        {
+          "targetId": "ahab",
+          "type": "\u00e9poux",
+          "description": "Son mari le roi d'Isra\u00ebl qu'elle domine"
+        },
+        {
+          "targetId": "elijah",
+          "type": "ennemi",
+          "description": "Le proph\u00e8te qui affronte son culte de Baal"
+        }
+      ]
+    },
+    {
+      "id": "ahab",
+      "level": 4,
+      "era": "prophets_exile",
+      "name": {
+        "fr": "Achab",
+        "he": "\u05d0\u05b7\u05d7\u05b0\u05d0\u05b8\u05d1",
+        "en": "Ahab",
+        "meaning": "Fr\u00e8re du p\u00e8re"
+      },
+      "description": "Roi d'Isra\u00ebl (874-853 av. J.-C.), septi\u00e8me roi du royaume du Nord. Sous l'influence de J\u00e9zabel, introduit le culte de Baal. Adversaire d'\u00c9lie sur le Carmel. D\u00e9crit comme 'pire que tous ses pr\u00e9d\u00e9cesseurs'.",
+      "references": [
+        "1 R 16:29-22:40"
+      ],
+      "relations": [
+        {
+          "targetId": "jezebel",
+          "type": "\u00e9pouse",
+          "description": "Sa femme ph\u00e9nicienne qui le pousse dans l'idol\u00e2trie"
+        },
+        {
+          "targetId": "elijah",
+          "type": "ennemi",
+          "description": "Le proph\u00e8te qui s'oppose \u00e0 lui sur le Carmel"
+        }
+      ]
+    },
+    {
+      "id": "nebuchadnezzar",
+      "level": 4,
+      "era": "prophets_exile",
+      "name": {
+        "fr": "Nabuchodonosor",
+        "he": "\u05e0\u05b0\u05d1\u05d5\u05bc\u05db\u05b7\u05d3\u05b0\u05e0\u05b6\u05e6\u05b7\u05bc\u05e8",
+        "en": "Nebuchadnezzar",
+        "meaning": "Nab\u00fb prot\u00e8ge l'h\u00e9ritier"
+      },
+      "description": "Roi de Babylone (605-562 av. J.-C.), conqu\u00e9rant de J\u00e9rusalem en 587, destructeur du Temple. Emporte les Juifs en captivit\u00e9. Humili\u00e9 par Dieu jusqu'\u00e0 la folie (mange de l'herbe comme un b\u0153uf), reconna\u00eet finalement la supr\u00e9matie de YHWH.",
+      "references": [
+        "2 R 24-25",
+        "Jr 25",
+        "Dn 1-4",
+        "Dn 4:37"
+      ],
+      "relations": [
+        {
+          "targetId": "daniel",
+          "type": "ma\u00eetre",
+          "description": "Roi dont Daniel interpr\u00e8te les r\u00eaves"
+        },
+        {
+          "targetId": "ezekiel",
+          "type": "ma\u00eetre",
+          "description": "D\u00e9porte \u00c9z\u00e9chiel \u00e0 Babylone"
+        },
+        {
+          "targetId": "jeremiah",
+          "type": "ennemi",
+          "description": "D\u00e9truit J\u00e9rusalem que J\u00e9r\u00e9mie tentait de sauver"
+        }
+      ]
+    },
+    {
+      "id": "pilate",
+      "level": 4,
+      "era": "new_testament",
+      "name": {
+        "fr": "Ponce Pilate",
+        "he": "\u05e4\u05bc\u05d5\u05b9\u05e0\u05b0\u05d8\u05b4\u05d9\u05bc\u05d5\u05bc\u05e1 \u05e4\u05b4\u05bc\u05d9\u05dc\u05b8\u05d8\u05d5\u05bc\u05e1",
+        "en": "Pontius Pilate",
+        "meaning": "Arm\u00e9 d'un javelot (Pontius)"
+      },
+      "description": "Gouverneur romain de Jud\u00e9e (26-36 ap. J.-C.). Condamne J\u00e9sus \u00e0 mort par crucifixion malgr\u00e9 sa conviction de son innocence, c\u00e9dant \u00e0 la pression des chefs religieux. Se lave symboliquement les mains. Personnage attest\u00e9 historiquement par une inscription \u00e0 C\u00e9sar\u00e9e.",
+      "references": [
+        "Mt 27:11-26",
+        "Lc 23:1-25",
+        "Jn 18:28-19:16",
+        "1 Tm 6:13"
+      ],
+      "relations": [
+        {
+          "targetId": "jesus",
+          "type": "ennemi",
+          "description": "Le condamne \u00e0 mort par crucifixion"
+        },
+        {
+          "targetId": "herod_antipas",
+          "type": "alli\u00e9",
+          "description": "T\u00e9trarque \u00e0 qui il renvoie J\u00e9sus bri\u00e8vement"
+        }
+      ]
+    },
+    {
+      "id": "herod_antipas",
+      "level": 4,
+      "era": "new_testament",
+      "name": {
+        "fr": "H\u00e9rode Antipas",
+        "he": "\u05d4\u05d5\u05b9\u05e8\u05b0\u05d3\u05d5\u05b9\u05e1 \u05d0\u05b7\u05e0\u05b0\u05d8\u05b4\u05d9\u05e4\u05b8\u05bc\u05e1",
+        "en": "Herod Antipas",
+        "meaning": "Fils du grand H\u00e9rode"
+      },
+      "description": "T\u00e9trarque de Galil\u00e9e et P\u00e9r\u00e9e. Fait d\u00e9capiter Jean-Baptiste \u00e0 la demande de Salom\u00e9, fille d'H\u00e9rodiade. J\u00e9sus l'appelle 'ce renard'. Lors du proc\u00e8s de J\u00e9sus, le renvoie \u00e0 Pilate.",
+      "references": [
+        "Mc 6:14-29",
+        "Lc 3:19-20",
+        "Lc 13:31-32",
+        "Lc 23:6-12"
+      ],
+      "relations": [
+        {
+          "targetId": "john_baptist",
+          "type": "ennemi",
+          "description": "Le fait d\u00e9capiter \u00e0 la demande de Salom\u00e9"
+        },
+        {
+          "targetId": "jesus",
+          "type": "ennemi",
+          "description": "Re\u00e7oit J\u00e9sus lors de son proc\u00e8s, le renvoie \u00e0 Pilate"
+        },
+        {
+          "targetId": "salome",
+          "type": "belle-fille",
+          "description": "Belle-fille dont la danse entra\u00eene la mort de Jean"
+        },
+        {
+          "targetId": "herodias",
+          "type": "\u00e9pouse",
+          "description": "Sa femme qui veut la mort de Jean-Baptiste"
+        }
+      ]
+    },
+    {
+      "id": "silas",
+      "level": 4,
+      "era": "new_testament",
+      "name": {
+        "fr": "Silas",
+        "he": "\u05e1\u05b4\u05d9\u05dc\u05b8\u05e1",
+        "en": "Silas",
+        "meaning": "Demand\u00e9 / du bois (latin Silvanus)"
+      },
+      "description": "Proph\u00e8te de l'\u00c9glise de J\u00e9rusalem, compagnon de Paul lors du 2e voyage missionnaire. Avec Paul, chante \u00e0 minuit dans la prison de Philippes \u2014 un tremblement de terre les lib\u00e8re. Co-auteur des \u00e9p\u00eetres aux Thessaloniciens.",
+      "references": [
+        "Ac 15:22-40",
+        "Ac 16:19-40",
+        "1 Th 1:1",
+        "1 P 5:12"
+      ],
+      "relations": [
+        {
+          "targetId": "paul",
+          "type": "alli\u00e9",
+          "description": "Compagnon du 2e voyage missionnaire"
+        },
+        {
+          "targetId": "peter",
+          "type": "alli\u00e9",
+          "description": "Secr\u00e9taire de l'\u00e9p\u00eetre de Pierre"
+        }
+      ]
+    },
+    {
+      "id": "ananias_damascus",
+      "level": 4,
+      "era": "new_testament",
+      "name": {
+        "fr": "Ananias de Damas",
+        "he": "\u05d7\u05b2\u05e0\u05b7\u05e0\u05b0\u05d9\u05b8\u05d4",
+        "en": "Ananias of Damascus",
+        "meaning": "YHWH est gracieux"
+      },
+      "description": "Disciple \u00e0 Damas envoy\u00e9 en vision pour baptiser Sa\u00fcl apr\u00e8s sa conversion. H\u00e9site \u00e0 cause de la r\u00e9putation de Sa\u00fcl comme pers\u00e9cuteur, mais ob\u00e9it. Pose les mains sur Sa\u00fcl qui recouvre la vue.",
+      "references": [
+        "Ac 9:10-19",
+        "Ac 22:12-16"
+      ],
+      "relations": [
+        {
+          "targetId": "paul",
+          "type": "mentor",
+          "description": "Le baptise et lui rend la vue apr\u00e8s la conversion"
+        }
+      ]
+    },
+    {
+      "id": "priscilla",
+      "level": 4,
+      "era": "new_testament",
+      "name": {
+        "fr": "Priscille",
+        "he": "\u05e4\u05b0\u05bc\u05e8\u05b4\u05d9\u05e1\u05b0\u05e7\u05b4\u05d9\u05dc\u05b8\u05bc\u05d4",
+        "en": "Priscilla",
+        "meaning": "Ancienne (latin)"
+      },
+      "description": "Femme d'Aquila, artisane et cat\u00e9chiste. Avec son mari, instruite par Paul et instruite \u00e0 son tour Apollos. Souvent nomm\u00e9e avant son mari \u2014 signe probable de son r\u00f4le pr\u00e9\u00e9minent. Co-dirigeante d'une \u00c9glise de maison.",
+      "references": [
+        "Ac 18:2-3",
+        "Ac 18:18-26",
+        "Rm 16:3-4",
+        "1 Co 16:19"
+      ],
+      "relations": [
+        {
+          "targetId": "aquila",
+          "type": "\u00e9poux",
+          "description": "Son mari avec qui elle forme une \u00e9quipe missionnaire"
+        },
+        {
+          "targetId": "paul",
+          "type": "alli\u00e9",
+          "description": "Compagnons de travail et collaborateurs"
+        },
+        {
+          "targetId": "apollos",
+          "type": "disciple",
+          "description": "Lui enseigne plus pr\u00e9cis\u00e9ment la voie de Dieu"
+        }
+      ]
+    },
+    {
+      "id": "aquila",
+      "level": 4,
+      "era": "new_testament",
+      "name": {
+        "fr": "Aquila",
+        "he": "\u05e2\u05b2\u05e7\u05b4\u05d9\u05dc\u05b8\u05d0",
+        "en": "Aquila",
+        "meaning": "Aigle (latin)"
+      },
+      "description": "Juif du Pont, tentmaker de Corinthe. Avec Priscille, accueille Paul et partage son m\u00e9tier. Instruit Apollos. Dirige une \u00c9glise de maison.",
+      "references": [
+        "Ac 18:2-3",
+        "Ac 18:18-26",
+        "Rm 16:3-4"
+      ],
+      "relations": [
+        {
+          "targetId": "priscilla",
+          "type": "\u00e9pouse",
+          "description": "Son \u00e9pouse, partenaire en tout"
+        },
+        {
+          "targetId": "paul",
+          "type": "alli\u00e9",
+          "description": "Compagnon de travail et collaborateur"
+        }
+      ]
+    },
+    {
+      "id": "apollos",
+      "level": 4,
+      "era": "new_testament",
+      "name": {
+        "fr": "Apollos",
+        "he": "\u05d0\u05b7\u05e4\u05bc\u05d5\u05b9\u05dc\u05bc\u05d5\u05b9\u05e1",
+        "en": "Apollos",
+        "meaning": "Du dieu Apollon"
+      },
+      "description": "Juif alexandrin, '\u00e9loquent et vers\u00e9 dans les \u00c9critures'. Pr\u00eache \u00e0 \u00c9ph\u00e8se et Corinthe avec ferveur. Instruit plus pr\u00e9cis\u00e9ment par Priscille et Aquila. Certains Corinthiens lui sont fid\u00e8les plut\u00f4t qu'\u00e0 Paul.",
+      "references": [
+        "Ac 18:24-28",
+        "1 Co 1:12",
+        "1 Co 3:4-6",
+        "Tt 3:13"
+      ],
+      "relations": [
+        {
+          "targetId": "priscilla",
+          "type": "mentor",
+          "description": "Le forme plus pr\u00e9cis\u00e9ment dans la foi"
+        },
+        {
+          "targetId": "aquila",
+          "type": "mentor",
+          "description": "Le forme avec Priscille"
+        },
+        {
+          "targetId": "paul",
+          "type": "alli\u00e9",
+          "description": "L'arrose l\u00e0 o\u00f9 Paul a plant\u00e9"
+        }
+      ]
+    },
+    {
+      "id": "martha",
+      "level": 4,
+      "era": "new_testament",
+      "name": {
+        "fr": "Marthe",
+        "he": "\u05de\u05b7\u05e8\u05b0\u05ea\u05b8\u05bc\u05d0",
+        "en": "Martha",
+        "meaning": "Ma\u00eetresse, dame (aram\u00e9en)"
+      },
+      "description": "S\u0153ur de Marie et Lazare \u00e0 B\u00e9thanie. Re\u00e7oit J\u00e9sus activement et se plaint que Marie ne l'aide pas. Fait la confession de foi : 'Je crois que tu es le Christ, le Fils de Dieu' (Jn 11:27).",
+      "references": [
+        "Lc 10:38-42",
+        "Jn 11:17-27"
+      ],
+      "relations": [
+        {
+          "targetId": "lazarus",
+          "type": "fr\u00e8re",
+          "description": "Son fr\u00e8re ressuscit\u00e9 par J\u00e9sus"
+        },
+        {
+          "targetId": "mary_bethany",
+          "type": "s\u0153ur",
+          "description": "Sa s\u0153ur contemplative"
+        },
+        {
+          "targetId": "jesus",
+          "type": "ma\u00eetre",
+          "description": "Son Seigneur qu'elle accueille et confesse"
+        }
+      ]
+    },
+    {
+      "id": "mary_bethany",
+      "level": 4,
+      "era": "new_testament",
+      "name": {
+        "fr": "Marie de B\u00e9thanie",
+        "he": "\u05de\u05b4\u05e8\u05b0\u05d9\u05b8\u05dd \u05de\u05b4\u05d1\u05b5\u05bc\u05d9\u05ea \u05e2\u05b7\u05e0\u05b0\u05d9\u05b8\u05d4",
+        "en": "Mary of Bethany",
+        "meaning": "Marie de B\u00e9thanie"
+      },
+      "description": "S\u0153ur de Marthe et Lazare. Choisit la bonne part en s'asseyant aux pieds de J\u00e9sus. Oint les pieds de J\u00e9sus d'un parfum co\u00fbteux (nard pur) \u2014 acte proph\u00e9tique que J\u00e9sus relie \u00e0 sa s\u00e9pulture.",
+      "references": [
+        "Lc 10:39-42",
+        "Jn 11:32",
+        "Jn 12:1-8"
+      ],
+      "relations": [
+        {
+          "targetId": "lazarus",
+          "type": "fr\u00e8re",
+          "description": "Son fr\u00e8re ressuscit\u00e9"
+        },
+        {
+          "targetId": "martha",
+          "type": "s\u0153ur",
+          "description": "Sa s\u0153ur active"
+        },
+        {
+          "targetId": "jesus",
+          "type": "ma\u00eetre",
+          "description": "Oint ses pieds d'un parfum co\u00fbteux"
+        }
+      ]
+    },
+    {
+      "id": "joseph_nt",
+      "level": 3,
+      "era": "new_testament",
+      "name": {
+        "fr": "Joseph de Nazareth",
+        "he": "\u05d9\u05d5\u05b9\u05e1\u05b5\u05e3",
+        "en": "Joseph of Nazareth",
+        "meaning": "Il ajoutera"
+      },
+      "description": "Charpentier de Nazareth, fianc\u00e9 puis \u00e9poux de Marie. Juste et mis\u00e9ricordieux : voulait r\u00e9pudier Marie discr\u00e8tement avant de recevoir la r\u00e9v\u00e9lation ang\u00e9lique. Guide la Sainte Famille en \u00c9gypte pour fuir H\u00e9rode. Dispara\u00eet des \u00e9vangiles apr\u00e8s le Temple \u00e0 12 ans \u2014 mort avant le minist\u00e8re de J\u00e9sus selon la tradition.",
+      "references": [
+        "Mt 1:18-25",
+        "Mt 2:13-23",
+        "Lc 2:1-52"
+      ],
+      "relations": [
+        {
+          "targetId": "mary_mother",
+          "type": "\u00e9pouse",
+          "description": "Sa fianc\u00e9e puis \u00e9pouse, m\u00e8re de J\u00e9sus"
+        },
+        {
+          "targetId": "jesus",
+          "type": "fils",
+          "description": "Son fils adoptif l\u00e9gal"
+        }
+      ]
+    },
+    {
+      "id": "elizabeth",
+      "level": 4,
+      "era": "new_testament",
+      "name": {
+        "fr": "\u00c9lisabeth",
+        "he": "\u05d0\u05b1\u05dc\u05b4\u05d9\u05e9\u05b6\u05c1\u05d1\u05b7\u05e2",
+        "en": "Elizabeth",
+        "meaning": "Mon Dieu est serment / mon Dieu est pl\u00e9nitude"
+      },
+      "description": "Cousine de Marie, \u00e9pouse du pr\u00eatre Zacharie. St\u00e9rile et \u00e2g\u00e9e, con\u00e7oit miraculeusement Jean-Baptiste. \u00c0 la visite de Marie, son enfant tressaille dans son ventre et elle s'exclame : 'B\u00e9nie es-tu entre les femmes !'",
+      "references": [
+        "Lc 1:5-25",
+        "Lc 1:39-45",
+        "Lc 1:57-80"
+      ],
+      "relations": [
+        {
+          "targetId": "john_baptist",
+          "type": "fils",
+          "description": "Son fils miraculeux"
+        },
+        {
+          "targetId": "zechariah_nt",
+          "type": "\u00e9poux",
+          "description": "Son mari pr\u00eatre frapp\u00e9 de mutisme"
+        },
+        {
+          "targetId": "mary_mother",
+          "type": "cousine",
+          "description": "Sa cousine qui la visite enceinte de J\u00e9sus"
+        }
+      ]
+    },
+    {
+      "id": "zechariah_nt",
+      "level": 4,
+      "era": "new_testament",
+      "name": {
+        "fr": "Zacharie (p\u00e8re de Jean)",
+        "he": "\u05d6\u05b0\u05db\u05b7\u05e8\u05b0\u05d9\u05b8\u05d4",
+        "en": "Zechariah (father of John)",
+        "meaning": "YHWH se souvient"
+      },
+      "description": "Pr\u00eatre de la classe d'Abija. Re\u00e7oit l'annonce de Gabriel concernant Jean-Baptiste dans le Temple. Doute et est frapp\u00e9 de mutisme jusqu'\u00e0 la naissance de son fils. Retrouve la parole et chante le Benedictus.",
+      "references": [
+        "Lc 1:5-25",
+        "Lc 1:57-80"
+      ],
+      "relations": [
+        {
+          "targetId": "john_baptist",
+          "type": "fils",
+          "description": "Son fils dont il annonce la naissance en retard"
+        },
+        {
+          "targetId": "elizabeth",
+          "type": "\u00e9pouse",
+          "description": "Son \u00e9pouse \u00e2g\u00e9e et st\u00e9rile"
+        }
+      ]
+    },
+    {
+      "id": "salome",
+      "level": 4,
+      "era": "new_testament",
+      "name": {
+        "fr": "Salom\u00e9",
+        "he": "\u05e9\u05b8\u05c1\u05dc\u05d5\u05b9\u05dd",
+        "en": "Salome",
+        "meaning": "Paix (Shalom)"
+      },
+      "description": "Belle-fille d'H\u00e9rode Antipas (fille d'H\u00e9rodiade). Sa danse lors du banquet d'anniversaire s\u00e9duit H\u00e9rode qui lui promet tout ce qu'elle veut. Instruite par sa m\u00e8re, elle demande la t\u00eate de Jean-Baptiste.",
+      "references": [
+        "Mc 6:17-28",
+        "Mt 14:6-11"
+      ],
+      "relations": [
+        {
+          "targetId": "herod_antipas",
+          "type": "ma\u00eetre",
+          "description": "Son beau-p\u00e8re dont la promesse entra\u00eene la mort de Jean"
+        },
+        {
+          "targetId": "john_baptist",
+          "type": "ennemi",
+          "description": "Demande sa t\u00eate sur un plateau"
+        },
+        {
+          "targetId": "herodias",
+          "type": "m\u00e8re",
+          "description": "Sa m\u00e8re qui lui dicte sa demande"
+        }
+      ]
+    },
+    {
+      "id": "herodias",
+      "level": 4,
+      "era": "new_testament",
+      "name": {
+        "fr": "H\u00e9rodiade",
+        "he": "\u05d4\u05d5\u05b9\u05e8\u05d5\u05b9\u05d3\u05b4\u05d9\u05b8\u05bc\u05d4",
+        "en": "Herodias",
+        "meaning": "De la famille d'H\u00e9rode"
+      },
+      "description": "Petite-fille d'H\u00e9rode le Grand. Jean-Baptiste la reprend publiquement pour son mariage illicite avec son beau-fr\u00e8re Antipas. Elle lui voue une haine farouche et man\u0153uvre pour sa mort.",
+      "references": [
+        "Mc 6:17-28",
+        "Mt 14:3-11"
+      ],
+      "relations": [
+        {
+          "targetId": "herod_antipas",
+          "type": "\u00e9poux",
+          "description": "Son mari, son beau-fr\u00e8re"
+        },
+        {
+          "targetId": "john_baptist",
+          "type": "ennemi",
+          "description": "Le fait tuer car il d\u00e9nonce son mariage ill\u00e9gitime"
+        },
+        {
+          "targetId": "salome",
+          "type": "fille",
+          "description": "Sa fille dont elle orchestre la demande meurtri\u00e8re"
+        }
+      ]
+    },
+    {
+      "id": "shadrach",
+      "level": 4,
+      "era": "prophets_exile",
+      "name": {
+        "fr": "Shadrak",
+        "he": "\u05e9\u05b7\u05c1\u05d3\u05b0\u05e8\u05b7\u05da\u05b0",
+        "en": "Shadrach",
+        "meaning": "Commandement de Aku (dieu lune babylonien) \u2014 nom h\u00e9breu : Hanania (YHWH est gracieux)"
+      },
+      "description": "Ami de Daniel, refusant d'adorer la statue de Nabuchodonosor. Jet\u00e9 dans la fournaise ardente avec Meshak et Abednego, prot\u00e9g\u00e9 par une myst\u00e9rieuse quatri\u00e8me pr\u00e9sence.",
+      "references": [
+        "Dn 1-3"
+      ],
+      "relations": [
+        {
+          "targetId": "daniel",
+          "type": "ami",
+          "description": "Son ami fid\u00e8le en exil \u00e0 Babylone"
+        },
+        {
+          "targetId": "meshach",
+          "type": "ami",
+          "description": "Compagnon dans la fournaise"
+        },
+        {
+          "targetId": "abednego",
+          "type": "ami",
+          "description": "Compagnon dans la fournaise"
+        }
+      ]
+    },
+    {
+      "id": "meshach",
+      "level": 4,
+      "era": "prophets_exile",
+      "name": {
+        "fr": "Meshak",
+        "he": "\u05de\u05b5\u05d9\u05e9\u05b7\u05c1\u05da\u05b0",
+        "en": "Meshach",
+        "meaning": "Qui est comme Aku \u2014 nom h\u00e9breu : Misha\u00ebl (qui est ce que Dieu est)"
+      },
+      "description": "Ami de Daniel, jet\u00e9 dans la fournaise ardente avec Shadrak et Abednego. Prot\u00e9g\u00e9 miraculeusement.",
+      "references": [
+        "Dn 1-3"
+      ],
+      "relations": [
+        {
+          "targetId": "daniel",
+          "type": "ami",
+          "description": "Son ami en exil"
+        },
+        {
+          "targetId": "shadrach",
+          "type": "ami",
+          "description": "Compagnon dans la fournaise"
+        },
+        {
+          "targetId": "abednego",
+          "type": "ami",
+          "description": "Compagnon dans la fournaise"
+        }
+      ]
+    },
+    {
+      "id": "abednego",
+      "level": 4,
+      "era": "prophets_exile",
+      "name": {
+        "fr": "Abednego",
+        "he": "\u05e2\u05b2\u05d1\u05b5\u05d3 \u05e0\u05b0\u05d2\u05d5\u05b9",
+        "en": "Abednego",
+        "meaning": "Serviteur de Nego (dieu babylonien) \u2014 nom h\u00e9breu : Azaria (YHWH a secouru)"
+      },
+      "description": "Ami de Daniel, jet\u00e9 dans la fournaise ardente avec Shadrak et Meshak. Prot\u00e9g\u00e9 miraculeusement.",
+      "references": [
+        "Dn 1-3"
+      ],
+      "relations": [
+        {
+          "targetId": "daniel",
+          "type": "ami",
+          "description": "Son ami en exil"
+        },
+        {
+          "targetId": "shadrach",
+          "type": "ami",
+          "description": "Compagnon dans la fournaise"
+        },
+        {
+          "targetId": "meshach",
+          "type": "ami",
+          "description": "Compagnon dans la fournaise"
+        }
+      ]
+    },
+    {
+      "id": "caleb",
+      "level": 4,
+      "era": "exodus",
+      "name": {
+        "fr": "Caleb",
+        "he": "\u05db\u05b8\u05bc\u05dc\u05b5\u05d1",
+        "en": "Caleb",
+        "meaning": "Chien (fid\u00e9lit\u00e9), ou tout entier (c\u0153ur)"
+      },
+      "description": "De la tribu de Juda, l'un des douze espions envoy\u00e9s en Canaan. Avec Josu\u00e9, l'un des deux seuls \u00e0 recommander la confiance en Dieu et \u00e0 entrer en Terre promise.",
+      "references": [
+        "Nb 13-14",
+        "Jos 14:6-15"
+      ],
+      "relations": [
+        {
+          "targetId": "joshua",
+          "type": "alli\u00e9",
+          "description": "Compagnon fid\u00e8le, seuls deux espions \u00e0 faire confiance \u00e0 Dieu"
+        }
+      ]
+    },
+    {
+      "id": "hannah",
+      "level": 4,
+      "era": "judges_kings",
+      "name": {
+        "fr": "Hannah",
+        "he": "\u05d7\u05b7\u05e0\u05b8\u05bc\u05d4",
+        "en": "Hannah",
+        "meaning": "Gr\u00e2ce, faveur"
+      },
+      "description": "M\u00e8re de Samuel, st\u00e9rile et humili\u00e9e par la rivale de son mari. Sa pri\u00e8re au Temple de Silo est l'arch\u00e9type de la pri\u00e8re personnelle intense. Con\u00e7oit Samuel miraculeusement et le consacre \u00e0 Dieu. Son cantique (1 S 2) pr\u00e9figure le Magnificat de Marie.",
+      "references": [
+        "1 S 1-2"
+      ],
+      "relations": [
+        {
+          "targetId": "samuel",
+          "type": "fils",
+          "description": "Son fils consacr\u00e9 \u00e0 Dieu d\u00e8s sa conception"
+        }
+      ]
+    },
+    {
+      "id": "eli",
+      "level": 4,
+      "era": "judges_kings",
+      "name": {
+        "fr": "\u00c9li",
+        "he": "\u05e2\u05b5\u05dc\u05b4\u05d9",
+        "en": "Eli",
+        "meaning": "\u00c9lev\u00e9, haut"
+      },
+      "description": "Grand-pr\u00eatre de Silo qui \u00e9l\u00e8ve Samuel. Ses fils sont corrompus et il ne les reprend pas \u2014 entra\u00eenant la mal\u00e9diction de sa maison. Meurt en apprenant que l'arche est captur\u00e9e.",
+      "references": [
+        "1 S 1-4"
+      ],
+      "relations": [
+        {
+          "targetId": "samuel",
+          "type": "disciple",
+          "description": "\u00c9l\u00e8ve Samuel qui entend l'appel divin dans le Temple"
+        }
+      ]
+    },
+    {
+      "id": "jeroboam",
+      "level": 4,
+      "era": "prophets_exile",
+      "name": {
+        "fr": "J\u00e9roboam",
+        "he": "\u05d9\u05b8\u05e8\u05b8\u05d1\u05b0\u05e2\u05b8\u05dd",
+        "en": "Jeroboam",
+        "meaning": "Le peuple est nombreux / plaide pour le peuple"
+      },
+      "description": "Premier roi du royaume du Nord (Isra\u00ebl) apr\u00e8s le schisme. Institue le culte des veaux d'or \u00e0 B\u00e9thel et Dan pour emp\u00eacher le peuple d'aller \u00e0 J\u00e9rusalem. 'Le p\u00e9ch\u00e9 de J\u00e9roboam' devient la formule st\u00e9r\u00e9otyp\u00e9e pour tous les rois impies du Nord.",
+      "references": [
+        "1 R 11:26-14:20"
+      ],
+      "relations": [
+        {
+          "targetId": "solomon",
+          "type": "rival",
+          "description": "Serviteur de Salomon qui se rebelle et divise le royaume"
+        }
+      ]
+    },
+    {
+      "id": "hezekiah",
+      "level": 4,
+      "era": "prophets_exile",
+      "name": {
+        "fr": "\u00c9z\u00e9chias",
+        "he": "\u05d7\u05b4\u05d6\u05b0\u05e7\u05b4\u05d9\u05b8\u05bc\u05d4\u05d5\u05bc",
+        "en": "Hezekiah",
+        "meaning": "YHWH est ma force"
+      },
+      "description": "Roi de Juda (715-686 av. J.-C.), r\u00e9formateur religieux exemplaire. D\u00e9truit les hauts lieux et le nehushtan (serpent de bronze de Mo\u00efse). R\u00e9siste \u00e0 Sennach\u00e9rib d'Assyrie gr\u00e2ce \u00e0 l'intervention divine (ange exterminateur). Malade \u00e0 mort, re\u00e7oit 15 ans de vie suppl\u00e9mentaires apr\u00e8s sa pri\u00e8re.",
+      "references": [
+        "2 R 18-20",
+        "2 Ch 29-32",
+        "Es 36-39"
+      ],
+      "relations": [
+        {
+          "targetId": "isaiah",
+          "type": "alli\u00e9",
+          "description": "Le proph\u00e8te qui le conseille face \u00e0 l'Assyrie et lui annonce 15 ans de vie"
+        }
+      ]
+    },
+    {
+      "id": "mordecai",
+      "level": 4,
+      "era": "prophets_exile",
+      "name": {
+        "fr": "Mardoch\u00e9e",
+        "he": "\u05de\u05b8\u05e8\u05b0\u05d3\u05b3\u05bc\u05db\u05b7\u05d9",
+        "en": "Mordecai",
+        "meaning": "Serviteur de Marduk"
+      },
+      "description": "Cousin et p\u00e8re adoptif d'Esther, fonctionnaire \u00e0 la porte du palais de Suse. Refuse de se prosterner devant Haman, d\u00e9clenchant la crise. Guide Esther dans sa d\u00e9marche courageuse. Finit en grand vizir de Perse.",
+      "references": [
+        "Et 2-10"
+      ],
+      "relations": [
+        {
+          "targetId": "esther",
+          "type": "cousine",
+          "description": "Sa cousine qu'il a \u00e9lev\u00e9e comme sa fille"
+        },
+        {
+          "targetId": "haman",
+          "type": "ennemi",
+          "description": "Son refus de se prosterner d\u00e9clenche le complot de Haman"
+        }
+      ]
+    },
+    {
+      "id": "haman",
+      "level": 4,
+      "era": "prophets_exile",
+      "name": {
+        "fr": "Haman",
+        "he": "\u05d4\u05b8\u05de\u05b8\u05df",
+        "en": "Haman",
+        "meaning": "Magnanime (perse) / ou turbulent"
+      },
+      "description": "Grand vizir du roi Assu\u00e9rus, Agagite (descendant d'Amalek). Offense mortelle au refus de r\u00e9v\u00e9rence de Mardoch\u00e9e \u2014 r\u00e9agit en cherchant \u00e0 exterminer tout le peuple juif de l'empire perse. Pendu \u00e0 la potence qu'il avait pr\u00e9par\u00e9e pour Mardoch\u00e9e.",
+      "references": [
+        "Et 3-7"
+      ],
+      "relations": [
+        {
+          "targetId": "esther",
+          "type": "ennemi",
+          "description": "Planifie le g\u00e9nocide de son peuple"
+        },
+        {
+          "targetId": "mordecai",
+          "type": "ennemi",
+          "description": "Son refus de r\u00e9v\u00e9rence d\u00e9clenche sa haine"
+        }
+      ]
+    },
+    {
+      "id": "baruch",
+      "level": 4,
+      "era": "prophets_exile",
+      "name": {
+        "fr": "Baruch",
+        "he": "\u05d1\u05b8\u05bc\u05e8\u05d5\u05bc\u05da\u05b0",
+        "en": "Baruch",
+        "meaning": "B\u00e9ni"
+      },
+      "description": "Secr\u00e9taire et disciple fid\u00e8le de J\u00e9r\u00e9mie. Transcrit et lit ses oracles. Pr\u00e9serve ses \u00e9crits pendant la chute de J\u00e9rusalem. Figure du disciple-scribe, gardien de la parole proph\u00e9tique.",
+      "references": [
+        "Jr 36",
+        "Jr 43:3-6",
+        "Jr 45"
+      ],
+      "relations": [
+        {
+          "targetId": "jeremiah",
+          "type": "ma\u00eetre",
+          "description": "Son ma\u00eetre proph\u00e8te dont il transcrit les oracles"
+        }
+      ]
+    },
+    {
+      "id": "naaman",
+      "level": 4,
+      "era": "prophets_exile",
+      "name": {
+        "fr": "Naaman",
+        "he": "\u05e0\u05b7\u05e2\u05b2\u05de\u05b8\u05df",
+        "en": "Naaman",
+        "meaning": "Agr\u00e9able, bienveillant"
+      },
+      "description": "G\u00e9n\u00e9ral en chef de l'arm\u00e9e syrienne, puissant mais l\u00e9preux. Sur le conseil d'une petite servante isra\u00e9lite captive, se rend aupr\u00e8s d'\u00c9lis\u00e9e et est gu\u00e9ri en se plongeant sept fois dans le Jourdain. Reconna\u00eet YHWH comme seul vrai Dieu. Cit\u00e9 par J\u00e9sus comme exemple de foi \u00e9trang\u00e8re (Lc 4:27).",
+      "references": [
+        "2 R 5",
+        "Lc 4:27"
+      ],
+      "relations": [
+        {
+          "targetId": "elisha",
+          "type": "ma\u00eetre",
+          "description": "Le proph\u00e8te qui le gu\u00e9rit de sa l\u00e8pre"
+        }
+      ]
+    },
+    {
+      "id": "potiphar",
+      "level": 4,
+      "era": "patriarchs",
+      "name": {
+        "fr": "Potiphar",
+        "he": "\u05e4\u05bc\u05d5\u05b9\u05d8\u05b4\u05d9\u05e4\u05b7\u05e8",
+        "en": "Potiphar",
+        "meaning": "Celui que R\u00e2 a donn\u00e9 (\u00e9gyptien)"
+      },
+      "description": "Chef de la garde du Pharaon, ach\u00e8te Joseph comme esclave. Lui fait confiance et le met \u00e0 la t\u00eate de sa maison. Sa femme, repouss\u00e9e par Joseph, le fait emprisonner en l'accusant faussement.",
+      "references": [
+        "Gn 37:36",
+        "Gn 39"
+      ],
+      "relations": [
+        {
+          "targetId": "joseph_patriarch",
+          "type": "ma\u00eetre",
+          "description": "Ach\u00e8te Joseph et lui fait confiance avant de l'emprisonner"
+        }
+      ]
+    },
+    {
+      "id": "barak",
+      "level": 4,
+      "era": "judges_kings",
+      "name": {
+        "fr": "Baraq",
+        "he": "\u05d1\u05b8\u05bc\u05e8\u05b8\u05e7",
+        "en": "Barak",
+        "meaning": "\u00c9clair"
+      },
+      "description": "Chef militaire mandat\u00e9 par D\u00e9borah contre Sisera. Refuse d'aller au combat sans elle \u2014 ce qui lui vaut que la gloire de la victoire ira \u00e0 une femme (Ja\u00ebl).",
+      "references": [
+        "Jg 4-5",
+        "He 11:32"
+      ],
+      "relations": [
+        {
+          "targetId": "deborah",
+          "type": "ma\u00eetre",
+          "description": "La proph\u00e9tesse qui le mandate et l'accompagne"
+        }
+      ]
+    },
+    {
+      "id": "jael",
+      "level": 4,
+      "era": "judges_kings",
+      "name": {
+        "fr": "Ja\u00ebl",
+        "he": "\u05d9\u05b8\u05e2\u05b5\u05dc",
+        "en": "Jael",
+        "meaning": "Chamois, ch\u00e8vre des montagnes"
+      },
+      "description": "Femme du K\u00e9nite H\u00e9ber. Apr\u00e8s la d\u00e9faite de Sisera, l'accueille dans sa tente et le tue pendant son sommeil en lui enfon\u00e7ant un piquet de tente dans la tempe. C\u00e9l\u00e9br\u00e9e dans le cantique de D\u00e9borah.",
+      "references": [
+        "Jg 4:17-22",
+        "Jg 5:24-27"
+      ],
+      "relations": [
+        {
+          "targetId": "deborah",
+          "type": "alli\u00e9",
+          "description": "Ach\u00e8ve la victoire c\u00e9l\u00e9br\u00e9e dans son cantique"
+        }
+      ]
+    },
+    {
+      "id": "leah",
+      "level": 4,
+      "era": "patriarchs",
+      "name": {
+        "fr": "L\u00e9a",
+        "he": "\u05dc\u05b5\u05d0\u05b8\u05d4",
+        "en": "Leah",
+        "meaning": "Vache sauvage, ou fatigu\u00e9e"
+      },
+      "description": "Fille a\u00een\u00e9e de Laban, donn\u00e9e \u00e0 Jacob \u00e0 la place de Rachel. Peu aim\u00e9e mais m\u00e8re de six fils (dont Juda et L\u00e9vi) et d'une fille (Dina). Sa souffrance conjugale est poignante \u2014 'YHWH vit qu'elle \u00e9tait d\u00e9laiss\u00e9e'.",
+      "references": [
+        "Gn 29-35"
+      ],
+      "relations": [
+        {
+          "targetId": "jacob",
+          "type": "\u00e9poux",
+          "description": "Son \u00e9poux qui la pr\u00e9f\u00e8re moins que Rachel"
+        },
+        {
+          "targetId": "rachel",
+          "type": "s\u0153ur",
+          "description": "Sa s\u0153ur cadette pr\u00e9f\u00e9r\u00e9e de Jacob"
+        },
+        {
+          "targetId": "laban",
+          "type": "p\u00e8re",
+          "description": "Son p\u00e8re qui la substitue \u00e0 Rachel"
+        },
+        {
+          "targetId": "judah",
+          "type": "fils",
+          "description": "Son fils, anc\u00eatre du Messie"
+        },
+        {
+          "targetId": "levi",
+          "type": "fils",
+          "description": "Son fils, anc\u00eatre des pr\u00eatres"
+        }
+      ]
+    },
+    {
+      "id": "rachel",
+      "level": 4,
+      "era": "patriarchs",
+      "name": {
+        "fr": "Rachel",
+        "he": "\u05e8\u05b8\u05d7\u05b5\u05dc",
+        "en": "Rachel",
+        "meaning": "Brebis"
+      },
+      "description": "Fille cadette de Laban, bien-aim\u00e9e de Jacob qui travaille 14 ans pour elle. Longtemps st\u00e9rile, m\u00e8re de Joseph et Benjamin. Meurt en accouchant de Benjamin. Arch\u00e9type de la m\u00e8re en deuil (Jr 31:15, cit\u00e9 en Mt 2:18).",
+      "references": [
+        "Gn 29-35",
+        "Jr 31:15",
+        "Mt 2:18"
+      ],
+      "relations": [
+        {
+          "targetId": "jacob",
+          "type": "\u00e9poux",
+          "description": "L'\u00e9poux bien-aim\u00e9 qui travaille 14 ans pour elle"
+        },
+        {
+          "targetId": "leah",
+          "type": "s\u0153ur",
+          "description": "Sa s\u0153ur a\u00een\u00e9e concurrente"
+        },
+        {
+          "targetId": "joseph_patriarch",
+          "type": "fils",
+          "description": "Son fils pr\u00e9f\u00e9r\u00e9 de Jacob"
+        },
+        {
+          "targetId": "benjamin",
+          "type": "fils",
+          "description": "Son dernier fils, \u00e0 la naissance duquel elle meurt"
+        }
+      ]
+    },
+    {
+      "id": "judah",
+      "level": 4,
+      "era": "patriarchs",
+      "name": {
+        "fr": "Juda",
+        "he": "\u05d9\u05b0\u05d4\u05d5\u05bc\u05d3\u05b8\u05d4",
+        "en": "Judah",
+        "meaning": "Lou\u00e9, c\u00e9l\u00e9br\u00e9"
+      },
+      "description": "Quatri\u00e8me fils de Jacob et L\u00e9a, chef de la tribu la plus importante \u2014 celle du lion. Propose de vendre Joseph plut\u00f4t que de le tuer. Interc\u00e8de pour Benjamin en \u00c9gypte. Anc\u00eatre de David et du Messie. La b\u00e9n\u00e9diction de Jacob lui promet le sceptre royal.",
+      "references": [
+        "Gn 37:26-27",
+        "Gn 44:18-34",
+        "Gn 49:8-12",
+        "Mt 1:2-3",
+        "Ap 5:5"
+      ],
+      "relations": [
+        {
+          "targetId": "jacob",
+          "type": "p\u00e8re",
+          "description": "Son p\u00e8re qui lui promet le sceptre royal"
+        },
+        {
+          "targetId": "leah",
+          "type": "m\u00e8re",
+          "description": "Sa m\u00e8re"
+        },
+        {
+          "targetId": "joseph_patriarch",
+          "type": "fr\u00e8re",
+          "description": "Propose de le vendre plut\u00f4t que de le tuer"
+        },
+        {
+          "targetId": "tamar_judah",
+          "type": "belle-fille",
+          "description": "Sa belle-fille qui lui donne des jumeaux P\u00e9rets et Z\u00e9rah"
+        },
+        {
+          "targetId": "david",
+          "type": "descendant",
+          "description": "David est son descendant, portant la promesse royale"
+        }
+      ]
+    },
+    {
+      "id": "levi",
+      "level": 4,
+      "era": "patriarchs",
+      "name": {
+        "fr": "L\u00e9vi",
+        "he": "\u05dc\u05b5\u05d5\u05b4\u05d9",
+        "en": "Levi",
+        "meaning": "Attach\u00e9, uni"
+      },
+      "description": "Troisi\u00e8me fils de Jacob et L\u00e9a, anc\u00eatre de la tribu sacerdotale. Avec Sim\u00e9on, massacre les Sich\u00e9mites pour venger Dina. Sa tribu ne re\u00e7oit pas de territoire en Canaan mais les villes l\u00e9vitiques.",
+      "references": [
+        "Gn 29:34",
+        "Gn 34",
+        "Gn 49:5-7",
+        "Nb 18"
+      ],
+      "relations": [
+        {
+          "targetId": "jacob",
+          "type": "p\u00e8re",
+          "description": "Son p\u00e8re"
+        },
+        {
+          "targetId": "leah",
+          "type": "m\u00e8re",
+          "description": "Sa m\u00e8re"
+        },
+        {
+          "targetId": "aaron",
+          "type": "descendant",
+          "description": "Aaron est son descendant, premier grand-pr\u00eatre"
+        },
+        {
+          "targetId": "moses",
+          "type": "descendant",
+          "description": "Mo\u00efse est son descendant"
+        }
+      ]
+    },
+    {
+      "id": "benjamin",
+      "level": 4,
+      "era": "patriarchs",
+      "name": {
+        "fr": "Benjamin",
+        "he": "\u05d1\u05b4\u05bc\u05e0\u05b0\u05d9\u05b8\u05de\u05b4\u05d9\u05df",
+        "en": "Benjamin",
+        "meaning": "Fils de la droite / fils de la force"
+      },
+      "description": "Dernier fils de Jacob, unique fils de Rachel avec Joseph. Sa m\u00e8re meurt en le mettant au monde. Tr\u00e8s aim\u00e9 de Jacob et de Joseph. Sa\u00fcl est de sa tribu, ainsi que l'ap\u00f4tre Paul.",
+      "references": [
+        "Gn 35:16-18",
+        "Gn 42-45",
+        "Ph 3:5"
+      ],
+      "relations": [
+        {
+          "targetId": "jacob",
+          "type": "p\u00e8re",
+          "description": "Son p\u00e8re qui le prot\u00e8ge jalousement"
+        },
+        {
+          "targetId": "rachel",
+          "type": "m\u00e8re",
+          "description": "Sa m\u00e8re morte \u00e0 sa naissance"
+        },
+        {
+          "targetId": "joseph_patriarch",
+          "type": "fr\u00e8re",
+          "description": "Son seul fr\u00e8re de m\u00eame m\u00e8re"
+        }
+      ]
+    },
+    {
+      "id": "zipporah",
+      "level": 4,
+      "era": "exodus",
+      "name": {
+        "fr": "S\u00e9phora",
+        "he": "\u05e6\u05b4\u05e4\u05b9\u05bc\u05e8\u05b8\u05d4",
+        "en": "Zipporah",
+        "meaning": "Oiseau, passereau"
+      },
+      "description": "Fille du pr\u00eatre J\u00e9thro de Madian, \u00e9pouse de Mo\u00efse. Circoncit leur fils lors d'un \u00e9pisode myst\u00e9rieux o\u00f9 Dieu veut tuer Mo\u00efse (Ex 4:24-26). Renvoy\u00e9e chez son p\u00e8re pendant les plaies, retrouve Mo\u00efse au Sina\u00ef.",
+      "references": [
+        "Ex 2:21",
+        "Ex 4:24-26",
+        "Ex 18:2-5"
+      ],
+      "relations": [
+        {
+          "targetId": "moses",
+          "type": "\u00e9poux",
+          "description": "Son mari qu'elle sauve lors de l'\u00e9pisode myst\u00e9rieux"
+        },
+        {
+          "targetId": "jethro",
+          "type": "p\u00e8re",
+          "description": "Son p\u00e8re pr\u00eatre de Madian"
+        }
+      ]
+    },
+    {
+      "id": "jethro",
+      "level": 4,
+      "era": "exodus",
+      "name": {
+        "fr": "J\u00e9thro",
+        "he": "\u05d9\u05b4\u05ea\u05b0\u05e8\u05d5\u05b9",
+        "en": "Jethro",
+        "meaning": "Son excellence / abondance"
+      },
+      "description": "Pr\u00eatre-sacrificateur de Madian, beau-p\u00e8re de Mo\u00efse. Accueille Mo\u00efse fugitif et lui donne sa fille. Apr\u00e8s l'Exode, vient retrouver Mo\u00efse et lui conseille judicieusement de d\u00e9l\u00e9guer le jugement des affaires secondaires.",
+      "references": [
+        "Ex 2:16-21",
+        "Ex 18"
+      ],
+      "relations": [
+        {
+          "targetId": "moses",
+          "type": "gendre",
+          "description": "Son gendre qu'il accueille et conseille"
+        },
+        {
+          "targetId": "zipporah",
+          "type": "fille",
+          "description": "Sa fille donn\u00e9e en mariage \u00e0 Mo\u00efse"
+        }
+      ]
+    },
+    {
+      "id": "queen_of_sheba",
+      "level": 4,
+      "era": "judges_kings",
+      "name": {
+        "fr": "Reine de Saba",
+        "he": "\u05de\u05b7\u05dc\u05b0\u05db\u05b7\u05bc\u05ea \u05e9\u05b0\u05c1\u05d1\u05b8\u05d0",
+        "en": "Queen of Sheba",
+        "meaning": "Reine de Saba (Y\u00e9men ou \u00c9thiopie)"
+      },
+      "description": "Reine venue de loin pour \u00e9prouver la sagesse de Salomon. Repart \u00e9merveill\u00e9e. Dans la tradition \u00e9thiopienne, c'est Makeda, m\u00e8re de M\u00e9n\u00e9lik Ier fondateur de la lign\u00e9e royale \u00e9thiopienne. J\u00e9sus la cite comme t\u00e9moin de la sagesse.",
+      "references": [
+        "1 R 10:1-13",
+        "2 Ch 9:1-12",
+        "Mt 12:42"
+      ],
+      "relations": [
+        {
+          "targetId": "solomon",
+          "type": "alli\u00e9",
+          "description": "Le roi dont elle vient \u00e9prouver la sagesse"
+        }
+      ]
+    },
+    {
+      "id": "tamar_david",
+      "level": 4,
+      "era": "judges_kings",
+      "name": {
+        "fr": "Tamar fille de David",
+        "he": "\u05ea\u05b8\u05bc\u05de\u05b8\u05e8",
+        "en": "Tamar daughter of David",
+        "meaning": "Palmier dattier"
+      },
+      "description": "Fille de David et s\u0153ur d'Absalom. Viol\u00e9e par son demi-fr\u00e8re Amnon. Sa d\u00e9tresse n'obtient pas justice de David, ce qui pousse Absalom \u00e0 venger son honneur en tuant Amnon.",
+      "references": [
+        "2 S 13:1-22"
+      ],
+      "relations": [
+        {
+          "targetId": "david",
+          "type": "p\u00e8re",
+          "description": "Son p\u00e8re qui n'exerce pas justice pour elle"
+        },
+        {
+          "targetId": "absalom",
+          "type": "fr\u00e8re",
+          "description": "Son fr\u00e8re qui la venge en tuant Amnon"
+        },
+        {
+          "targetId": "amnon",
+          "type": "fr\u00e8re",
+          "description": "Son demi-fr\u00e8re qui la viole"
+        }
+      ]
+    },
+    {
+      "id": "amnon",
+      "level": 4,
+      "era": "judges_kings",
+      "name": {
+        "fr": "Amnon",
+        "he": "\u05d0\u05b7\u05de\u05b0\u05e0\u05d5\u05b9\u05df",
+        "en": "Amnon",
+        "meaning": "Fid\u00e8le, nourricier"
+      },
+      "description": "Fils a\u00een\u00e9 de David, viole sa demi-s\u0153ur Tamar. Tu\u00e9 par Absalom en vengeance deux ans plus tard.",
+      "references": [
+        "2 S 13:1-33"
+      ],
+      "relations": [
+        {
+          "targetId": "david",
+          "type": "p\u00e8re",
+          "description": "Son p\u00e8re"
+        },
+        {
+          "targetId": "tamar_david",
+          "type": "s\u0153ur",
+          "description": "Sa demi-s\u0153ur qu'il viole"
+        },
+        {
+          "targetId": "absalom",
+          "type": "fr\u00e8re",
+          "description": "Son demi-fr\u00e8re qui le tue en vengeance"
+        }
+      ]
+    },
+    {
+      "id": "uriah",
+      "level": 4,
+      "era": "judges_kings",
+      "name": {
+        "fr": "Urie",
+        "he": "\u05d0\u05d5\u05bc\u05e8\u05b4\u05d9\u05b8\u05bc\u05d4",
+        "en": "Uriah",
+        "meaning": "YHWH est ma lumi\u00e8re"
+      },
+      "description": "Hittite, soldat fid\u00e8le de David. Sa loyaut\u00e9 m\u00eame envers David qui complot contre lui est poignante \u2014 refuse de rentrer chez lui pendant la guerre. Envoy\u00e9 \u00e0 la mort sur ordre de David. Sa fid\u00e9lit\u00e9 contraste tragiquement avec la trahison de son roi.",
+      "references": [
+        "2 S 11",
+        "Mt 1:6"
+      ],
+      "relations": [
+        {
+          "targetId": "bathsheba",
+          "type": "\u00e9pouse",
+          "description": "Son \u00e9pouse convoit\u00e9e par David"
+        },
+        {
+          "targetId": "david",
+          "type": "ma\u00eetre",
+          "description": "Son roi qui le fait tuer pour prendre sa femme"
+        }
+      ]
+    },
+    {
+      "id": "laban",
+      "level": 4,
+      "era": "patriarchs",
+      "name": {
+        "fr": "Laban",
+        "he": "\u05dc\u05b8\u05d1\u05b8\u05df",
+        "en": "Laban",
+        "meaning": "Blanc, pur"
+      },
+      "description": "Fr\u00e8re de R\u00e9becca, p\u00e8re de L\u00e9a et Rachel, oncle et beau-p\u00e8re de Jacob. Exploite Jacob 20 ans, change son salaire 10 fois. Symbole de l'h\u00f4te rus\u00e9 et avare.",
+      "references": [
+        "Gn 24:29",
+        "Gn 29-31"
+      ],
+      "relations": [
+        {
+          "targetId": "jacob",
+          "type": "gendre",
+          "description": "Son gendre qu'il exploite 20 ans"
+        },
+        {
+          "targetId": "leah",
+          "type": "fille",
+          "description": "Sa fille a\u00een\u00e9e donn\u00e9e \u00e0 Jacob \u00e0 la place de Rachel"
+        },
+        {
+          "targetId": "rachel",
+          "type": "fille",
+          "description": "Sa fille cadette bien-aim\u00e9e de Jacob"
+        }
+      ]
+    },
+    {
+      "id": "tamar_judah",
+      "level": 4,
+      "era": "patriarchs",
+      "name": {
+        "fr": "Tamar (belle-fille de Juda)",
+        "he": "\u05ea\u05b8\u05bc\u05de\u05b8\u05e8",
+        "en": "Tamar (daughter-in-law of Judah)",
+        "meaning": "Palmier dattier"
+      },
+      "description": "Belle-fille de Juda, veuve de ses deux fils Er et Onan. Se d\u00e9guise en prostitu\u00e9e pour obtenir de Juda une descendance selon le droit du l\u00e9virat. M\u00e8re de P\u00e9rets et Z\u00e9rah, anc\u00eatres de David. Dans la g\u00e9n\u00e9alogie de J\u00e9sus.",
+      "references": [
+        "Gn 38",
+        "Mt 1:3"
+      ],
+      "relations": [
+        {
+          "targetId": "judah",
+          "type": "beau-p\u00e8re",
+          "description": "Son beau-p\u00e8re dont elle obtient une descendance par ruse"
+        }
+      ]
+    },
+    {
+      "id": "asenath",
+      "level": 4,
+      "era": "patriarchs",
+      "name": {
+        "fr": "Asenath",
+        "he": "\u05d0\u05b8\u05e1\u05b0\u05e0\u05b7\u05ea",
+        "en": "Asenath",
+        "meaning": "Appartenant \u00e0 Neith (d\u00e9esse \u00e9gyptienne)"
+      },
+      "description": "Fille du pr\u00eatre de On (H\u00e9liopolis), \u00e9pouse \u00e9gyptienne de Joseph donn\u00e9e par Pharaon. M\u00e8re de Manass\u00e9 et \u00c9phra\u00efm \u2014 tribus adopt\u00e9es par Jacob.",
+      "references": [
+        "Gn 41:45",
+        "Gn 46:20"
+      ],
+      "relations": [
+        {
+          "targetId": "joseph_patriarch",
+          "type": "\u00e9poux",
+          "description": "Son mari Joseph, vizir d'\u00c9gypte"
+        }
+      ]
+    },
+    {
+      "id": "eliphaz",
+      "level": 4,
+      "era": "prophets_exile",
+      "name": {
+        "fr": "\u00c9liphaz",
+        "he": "\u05d0\u05b1\u05dc\u05b4\u05d9\u05e4\u05b7\u05d6",
+        "en": "Eliphaz",
+        "meaning": "Mon Dieu est or / force de Dieu"
+      },
+      "description": "Le premier et le plus \u00e9loquent des trois amis de Job, de T\u00e9m\u00e2n (\u00c9dom). D\u00e9fend une th\u00e9ologie de la r\u00e9tribution stricte \u2014 la souffrance est toujours punition du p\u00e9ch\u00e9. Sa th\u00e9ologie est belle mais insuffisante, rejet\u00e9e par Dieu \u00e0 la fin.",
+      "references": [
+        "Jb 2:11",
+        "Jb 4-5",
+        "Jb 15",
+        "Jb 22",
+        "Jb 42:7"
+      ],
+      "relations": [
+        {
+          "targetId": "job",
+          "type": "ami",
+          "description": "Son ami dont il tente d'expliquer la souffrance"
+        }
+      ]
+    },
+    {
+      "id": "bildad",
+      "level": 4,
+      "era": "prophets_exile",
+      "name": {
+        "fr": "Bildad",
+        "he": "\u05d1\u05b4\u05bc\u05dc\u05b0\u05d3\u05b7\u05bc\u05d3",
+        "en": "Bildad",
+        "meaning": "B\u00eal a aim\u00e9 / fils de la discorde"
+      },
+      "description": "Second ami de Job, de Schuach. Invoque la sagesse ancestrale pour justifier la souffrance de Job. Plus rigide qu'\u00c9liphaz.",
+      "references": [
+        "Jb 2:11",
+        "Jb 8",
+        "Jb 18",
+        "Jb 25"
+      ],
+      "relations": [
+        {
+          "targetId": "job",
+          "type": "ami",
+          "description": "Son ami dont il tente d'expliquer la souffrance"
+        }
+      ]
+    },
+    {
+      "id": "zophar",
+      "level": 4,
+      "era": "prophets_exile",
+      "name": {
+        "fr": "Tsophar",
+        "he": "\u05e6\u05d5\u05b9\u05e4\u05b7\u05e8",
+        "en": "Zophar",
+        "meaning": "Gazouillement d'oiseau / sautiller"
+      },
+      "description": "Troisi\u00e8me ami de Job, de Naama. Le plus dur et le plus condescendant des trois. Accuse Job directement d'\u00eatre p\u00e9cheur.",
+      "references": [
+        "Jb 2:11",
+        "Jb 11",
+        "Jb 20"
+      ],
+      "relations": [
+        {
+          "targetId": "job",
+          "type": "ami",
+          "description": "Son ami dont il tente d'expliquer la souffrance"
+        }
+      ]
+    },
+    {
+      "id": "elihu",
+      "level": 4,
+      "era": "prophets_exile",
+      "name": {
+        "fr": "\u00c9lihu",
+        "he": "\u05d0\u05b1\u05dc\u05b4\u05d9\u05d4\u05d5\u05bc",
+        "en": "Elihu",
+        "meaning": "Il est mon Dieu"
+      },
+      "description": "Le plus jeune interlocuteur de Job, pr\u00e9sente un discours plus spirituel et plus proche de la r\u00e9ponse divine. Introduit la notion de la souffrance comme discipline purificatrice. N'est pas condamn\u00e9 par Dieu contrairement aux trois autres.",
+      "references": [
+        "Jb 32-37"
+      ],
+      "relations": [
+        {
+          "targetId": "job",
+          "type": "ami",
+          "description": "Son interlocuteur dont le discours approche la v\u00e9rit\u00e9 divine"
+        }
+      ]
+    },
+    {
+      "id": "ahasuerus",
+      "level": 4,
+      "era": "prophets_exile",
+      "name": {
+        "fr": "Assu\u00e9rus",
+        "he": "\u05d0\u05b2\u05d7\u05b7\u05e9\u05b0\u05c1\u05d5\u05b5\u05e8\u05d5\u05b9\u05e9\u05c1",
+        "en": "Ahasuerus",
+        "meaning": "Roi puissant (perse)"
+      },
+      "description": "Roi de Perse identifi\u00e9 g\u00e9n\u00e9ralement avec Xerx\u00e8s Ier (485-465 av. J.-C.). Choisit Esther comme reine. Autocrate capricieux mais finalement influen\u00e7able par celle qu'il aime.",
+      "references": [
+        "Et 1-10"
+      ],
+      "relations": [
+        {
+          "targetId": "esther",
+          "type": "\u00e9pouse",
+          "description": "Sa reine qui lui r\u00e9v\u00e8le la trahison de Haman"
+        },
+        {
+          "targetId": "haman",
+          "type": "alli\u00e9",
+          "description": "Son grand vizir dont il autorise d'abord les plans"
+        }
+      ]
+    },
+    {
+      "id": "artaxerxes",
+      "level": 4,
+      "era": "prophets_exile",
+      "name": {
+        "fr": "Artaxerx\u00e8s",
+        "he": "\u05d0\u05b7\u05e8\u05b0\u05ea\u05b7\u05bc\u05d7\u05b0\u05e9\u05b7\u05c1\u05e1\u05b0\u05ea\u05b0\u05bc\u05d0",
+        "en": "Artaxerxes",
+        "meaning": "Grand roi / roi du juste"
+      },
+      "description": "Roi de Perse (465-424 av. J.-C.) qui autorise le retour d'Esdras puis de N\u00e9h\u00e9mie \u00e0 J\u00e9rusalem. Sa bienveillance envers les Juifs est remarquable dans le contexte imp\u00e9rial.",
+      "references": [
+        "Esd 7",
+        "N\u00e9 2"
+      ],
+      "relations": [
+        {
+          "targetId": "ezra",
+          "type": "ma\u00eetre",
+          "description": "Le roi qui l'autorise \u00e0 retourner \u00e0 J\u00e9rusalem avec la Torah"
+        },
+        {
+          "targetId": "nehemiah",
+          "type": "ma\u00eetre",
+          "description": "Le roi dont il est l'\u00e9chanson et qui l'autorise \u00e0 reconstruire"
+        }
+      ]
+    },
+    {
+      "id": "lois",
+      "level": 4,
+      "era": "new_testament",
+      "name": {
+        "fr": "Lo\u00efs",
+        "he": "\u05dc\u05d5\u05b9\u05d0\u05b4\u05d9\u05e1",
+        "en": "Lois",
+        "meaning": "Meilleure, plus d\u00e9sirable (grec)"
+      },
+      "description": "Grand-m\u00e8re de Timoth\u00e9e, cit\u00e9e par Paul comme ayant transmis une foi sinc\u00e8re \u00e0 sa fille Eunice et \u00e0 Timoth\u00e9e. Figure de la transmission interg\u00e9n\u00e9rationnelle de la foi.",
+      "references": [
+        "2 Tm 1:5"
+      ],
+      "relations": [
+        {
+          "targetId": "timothy",
+          "type": "petit-fils",
+          "description": "Son petit-fils qui h\u00e9rite de sa foi"
+        },
+        {
+          "targetId": "eunice",
+          "type": "fille",
+          "description": "Sa fille, m\u00e8re de Timoth\u00e9e"
+        }
+      ]
+    },
+    {
+      "id": "eunice",
+      "level": 4,
+      "era": "new_testament",
+      "name": {
+        "fr": "Eunice",
+        "he": "\u05d0\u05b5\u05d9\u05d5\u05bc\u05e0\u05b4\u05d9\u05e7\u05b5\u05d9",
+        "en": "Eunice",
+        "meaning": "Bonne victoire (grec)"
+      },
+      "description": "M\u00e8re de Timoth\u00e9e, Juive croyante mari\u00e9e \u00e0 un Grec. Paul mentionne sa foi sinc\u00e8re transmise \u00e0 son fils avec celle de sa propre m\u00e8re Lo\u00efs.",
+      "references": [
+        "Ac 16:1",
+        "2 Tm 1:5"
+      ],
+      "relations": [
+        {
+          "targetId": "timothy",
+          "type": "fils",
+          "description": "Son fils, collaborateur de Paul"
+        },
+        {
+          "targetId": "lois",
+          "type": "m\u00e8re",
+          "description": "Sa m\u00e8re croyante"
+        }
+      ]
+    },
+    {
+      "id": "nathanael",
+      "level": 4,
+      "era": "new_testament",
+      "name": {
+        "fr": "Nathana\u00ebl (Barth\u00e9lemy)",
+        "he": "\u05e0\u05b0\u05ea\u05b7\u05e0\u05b0\u05d0\u05b5\u05dc",
+        "en": "Nathanael (Bartholomew)",
+        "meaning": "Dieu a donn\u00e9 (Nathana\u00ebl) / fils de Tholma\u00ef (Barth\u00e9lemy)"
+      },
+      "description": "Amen\u00e9 \u00e0 J\u00e9sus par Philippe. D'abord sceptique ('Peut-il venir quelque chose de bon de Nazareth ?'), il est boulevers\u00e9 quand J\u00e9sus r\u00e9v\u00e8le le conna\u00eetre avant m\u00eame que Philippe l'appelle. Sa confession : 'Tu es le Fils de Dieu, tu es le roi d'Isra\u00ebl'.",
+      "references": [
+        "Jn 1:45-51",
+        "Jn 21:2"
+      ],
+      "relations": [
+        {
+          "targetId": "jesus",
+          "type": "ma\u00eetre",
+          "description": "Son Seigneur qui le conna\u00eet avant m\u00eame l'appel"
+        },
+        {
+          "targetId": "philip_apostle",
+          "type": "ami",
+          "description": "Son ami qui le conduit \u00e0 J\u00e9sus"
+        }
+      ]
+    },
+    {
+      "id": "lamech_noah",
+      "level": 4,
+      "era": "origins",
+      "name": {
+        "fr": "L\u00e9mec (p\u00e8re de No\u00e9)",
+        "he": "\u05dc\u05b6\u05de\u05b6\u05da\u05b0",
+        "en": "Lamech (father of Noah)",
+        "meaning": "Incertain : puissant, ou humble"
+      },
+      "description": "Fils de Mathusalem, p\u00e8re de No\u00e9. Pr\u00e9dit que son fils consolera l'humanit\u00e9 du travail p\u00e9nible. \u00c0 ne pas confondre avec l'autre L\u00e9mec, descendant de Ca\u00efn et premier polygame.",
+      "references": [
+        "Gn 5:25-31"
+      ],
+      "relations": [
+        {
+          "targetId": "noah",
+          "type": "fils",
+          "description": "Son fils dont il pr\u00e9dit le r\u00f4le consolateur"
+        },
+        {
+          "targetId": "enoch",
+          "type": "p\u00e8re",
+          "description": "Son p\u00e8re, \u00c9noch qui marchait avec Dieu"
+        }
+      ]
+    },
+    {
+      "id": "terah",
+      "level": 4,
+      "era": "patriarchs",
+      "name": {
+        "fr": "T\u00e9rah",
+        "he": "\u05ea\u05b6\u05bc\u05e8\u05b7\u05d7",
+        "en": "Terah",
+        "meaning": "Bouquetin / station"
+      },
+      "description": "P\u00e8re d'Abraham, de Nahor et de Haran. Quitte Ur des Chald\u00e9ens avec Abraham pour aller \u00e0 Canaan, mais s'arr\u00eate \u00e0 Haran o\u00f9 il meurt \u00e0 205 ans. Selon Jos 24:2, il servait d'autres dieux.",
+      "references": [
+        "Gn 11:26-32",
+        "Jos 24:2"
+      ],
+      "relations": [
+        {
+          "targetId": "abraham",
+          "type": "fils",
+          "description": "Son fils qui continue le voyage vers Canaan"
+        },
+        {
+          "targetId": "lot",
+          "type": "petit-fils",
+          "description": "P\u00e8re de Haran, grand-p\u00e8re de Lot"
+        }
+      ]
+    },
+    {
+      "id": "pharaoh_ramesses",
+      "level": 4,
+      "era": "exodus",
+      "name": {
+        "fr": "Pharaon de l'Exode",
+        "he": "\u05e4\u05b7\u05bc\u05e8\u05b0\u05e2\u05b9\u05d4",
+        "en": "Pharaoh of the Exodus",
+        "meaning": "Grande maison (\u00e9gyptien per-aa)"
+      },
+      "description": "Pharaon anonyme de l'Exode (traditionellement identifi\u00e9 \u00e0 Rams\u00e8s II ou Am\u00e9nophis II selon les datations). Refuse de laisser partir Isra\u00ebl malgr\u00e9 les dix plaies. Son arm\u00e9e est engloutie dans la mer Rouge.",
+      "references": [
+        "Ex 5-15",
+        "Rm 9:17"
+      ],
+      "relations": [
+        {
+          "targetId": "moses",
+          "type": "ennemi",
+          "description": "L'adversaire de Mo\u00efse lors des dix plaies"
+        }
+      ]
+    },
+    {
+      "id": "pharaoh_joseph",
+      "level": 4,
+      "era": "patriarchs",
+      "name": {
+        "fr": "Pharaon de Joseph",
+        "he": "\u05e4\u05b7\u05bc\u05e8\u05b0\u05e2\u05b9\u05d4",
+        "en": "Pharaoh of Joseph",
+        "meaning": "Grande maison"
+      },
+      "description": "Pharaon anonyme qui nomme Joseph vizir apr\u00e8s l'interpr\u00e9tation de ses r\u00eaves (sept vaches grasses / sept vaches maigres). Accueille Jacob et ses fils en Goshen.",
+      "references": [
+        "Gn 41-47"
+      ],
+      "relations": [
+        {
+          "targetId": "joseph_patriarch",
+          "type": "ma\u00eetre",
+          "description": "Le roi qui le nomme vizir de tout l'\u00c9gypte"
+        }
+      ]
+    },
+    {
+      "id": "manoah",
+      "level": 4,
+      "era": "judges_kings",
+      "name": {
+        "fr": "Manoah",
+        "he": "\u05de\u05b8\u05e0\u05d5\u05b9\u05d7\u05b7",
+        "en": "Manoah",
+        "meaning": "Repos"
+      },
+      "description": "P\u00e8re de Samson, de la tribu de Dan. Re\u00e7oit avec sa femme l'annonce ang\u00e9lique de la naissance de Samson et les instructions du v\u0153u nazar\u00e9en.",
+      "references": [
+        "Jg 13"
+      ],
+      "relations": [
+        {
+          "targetId": "samson",
+          "type": "fils",
+          "description": "Son fils nazar\u00e9en \u00e0 la naissance miraculeuse"
+        }
+      ]
+    },
+    {
+      "id": "jesse",
+      "level": 4,
+      "era": "judges_kings",
+      "name": {
+        "fr": "Isa\u00ef",
+        "he": "\u05d9\u05b4\u05e9\u05b7\u05c1\u05d9",
+        "en": "Jesse",
+        "meaning": "Dieu existe / mon homme"
+      },
+      "description": "P\u00e8re de David, Bethl\u00e9h\u00e9mite de la tribu de Juda. Samuel vient chez lui chercher le futur roi parmi ses fils. La 'tige d'Isa\u00ef' (Es 11:1) est une m\u00e9taphore messianique c\u00e9l\u00e8bre.",
+      "references": [
+        "1 S 16:1-13",
+        "Es 11:1",
+        "Rm 15:12"
+      ],
+      "relations": [
+        {
+          "targetId": "david",
+          "type": "fils",
+          "description": "Son fils benjamin choisi par Dieu comme roi"
+        },
+        {
+          "targetId": "ruth",
+          "type": "petit-fils",
+          "description": "Petit-fils de Ruth et Boaz"
+        }
+      ]
+    },
+    {
+      "id": "ahaz",
+      "level": 4,
+      "era": "prophets_exile",
+      "name": {
+        "fr": "Achaz",
+        "he": "\u05d0\u05b8\u05d7\u05b8\u05d6",
+        "en": "Ahaz",
+        "meaning": "Il a saisi / il tient"
+      },
+      "description": "Roi de Juda (735-715 av. J.-C.), impie. C'est \u00e0 lui qu'\u00c9sa\u00efe donne le signe de l'Emmanuel (Es 7:14). Fait passer son fils dans le feu. Pr\u00e9f\u00e8re l'alliance assyrienne \u00e0 la confiance en YHWH.",
+      "references": [
+        "2 R 16",
+        "Es 7",
+        "2 Ch 28"
+      ],
+      "relations": [
+        {
+          "targetId": "isaiah",
+          "type": "ennemi",
+          "description": "Le proph\u00e8te qui lui donne le signe de l'Emmanuel malgr\u00e9 son incr\u00e9dulit\u00e9"
+        },
+        {
+          "targetId": "hezekiah",
+          "type": "fils",
+          "description": "Son fils r\u00e9formateur qui efface ses mauvaises actions"
+        }
+      ]
+    },
+    {
+      "id": "simon_cyrene",
+      "level": 4,
+      "era": "new_testament",
+      "name": {
+        "fr": "Simon de Cyr\u00e8ne",
+        "he": "\u05e9\u05b4\u05c1\u05de\u05b0\u05e2\u05d5\u05b9\u05df \u05d4\u05b7\u05e7\u05bb\u05bc\u05e8\u05b5\u05d9\u05e0\u05b7\u05d0\u05d9",
+        "en": "Simon of Cyrene",
+        "meaning": "Simon : entendu de Dieu"
+      },
+      "description": "Juif de Cyr\u00e8ne (Libye actuelle) r\u00e9quisitionn\u00e9 par les soldats romains pour porter la croix de J\u00e9sus. P\u00e8re d'Alexandre et Rufus \u2014 nomm\u00e9s laissant penser qu'ils \u00e9taient connus de la communaut\u00e9 chr\u00e9tienne.",
+      "references": [
+        "Mt 27:32",
+        "Mc 15:21",
+        "Lc 23:26"
+      ],
+      "relations": [
+        {
+          "targetId": "jesus",
+          "type": "alli\u00e9",
+          "description": "Porte sa croix sur le chemin du Golgotha"
+        }
+      ]
+    },
+    {
+      "id": "joseph_arimathea",
+      "level": 4,
+      "era": "new_testament",
+      "name": {
+        "fr": "Joseph d'Arimath\u00e9e",
+        "he": "\u05d9\u05d5\u05b9\u05e1\u05b5\u05e3 \u05d4\u05b8\u05e8\u05b8\u05de\u05b8\u05ea\u05b4\u05d9",
+        "en": "Joseph of Arimathea",
+        "meaning": "Joseph d'Arimath\u00e9e (ville de Jud\u00e9e)"
+      },
+      "description": "Membre riche du Sanh\u00e9drin, disciple secret de J\u00e9sus. Demande courageusement \u00e0 Pilate le corps de J\u00e9sus apr\u00e8s la crucifixion. L'ensevelit dans son propre tombeau neuf. Selon la tradition britannique, aurait apport\u00e9 le Graal en Angleterre.",
+      "references": [
+        "Mt 27:57-60",
+        "Mc 15:43-46",
+        "Jn 19:38-42"
+      ],
+      "relations": [
+        {
+          "targetId": "jesus",
+          "type": "ma\u00eetre",
+          "description": "Son Seigneur dont il r\u00e9clame le corps pour l'ensevelir"
+        },
+        {
+          "targetId": "nicodemus",
+          "type": "alli\u00e9",
+          "description": "L'accompagne pour les aromates de la s\u00e9pulture"
+        }
+      ]
+    },
+    {
+      "id": "eliezer",
+      "level": 4,
+      "era": "exodus",
+      "name": {
+        "fr": "Eleazar",
+        "he": "alazar",
+        "en": "Eleazar",
+        "meaning": "Dieu a aide"
+      },
+      "description": "Troisieme fils d Aaron, lui succede comme grand-pretre d Israel apres la mort d Aaron sur le mont Hor. Ancetre de la lignee sacerdotale saducceenne.",
+      "references": [
+        "Nb 20:28",
+        "Nb 27:21",
+        "Jos 14:1"
+      ],
+      "relations": [
+        {
+          "targetId": "aaron",
+          "type": "pere",
+          "description": "Son pere, premier grand-pretre dont il prend la succession"
+        },
+        {
+          "targetId": "moses",
+          "type": "oncle",
+          "description": "Son oncle"
+        },
+        {
+          "targetId": "joshua",
+          "type": "allie",
+          "description": "Travaille avec lui pour la distribution de Canaan"
+        }
+      ]
+    }
+  ]
+}
